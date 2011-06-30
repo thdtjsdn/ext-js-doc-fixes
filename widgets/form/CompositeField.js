@@ -252,6 +252,7 @@ Ext.form.CompositeField = Ext.extend(Ext.form.Field, {
 
     /**
      * Performs validation checks on each subfield and returns false if any of them fail validation.
+     * @param {Mixed} value The current value of the field
      * @return {Boolean} False if any subfield failed validation
      */
     validateValue: function(value, preventMark) {

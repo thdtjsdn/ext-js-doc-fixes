@@ -132,10 +132,9 @@ Ext.data.DataWriter.prototype = {
     /**
      * abstract method meant to be overridden by all DataWriter extensions.  It's the extension's job to apply the "data" to the "params".
      * The data-object provided to render is populated with data according to the meta-info defined in the user's DataReader config,
-     * @param {String} action [Ext.data.Api.actions.create|read|update|destroy]
-     * @param {Record[]} rs Store recordset
+     * @param {Object} baseParams as defined by {@link Ext.data.Store#baseParams}.  The baseParms must be encoded by the extending class, eg: {@link Ext.data.JsonWriter}, {@link Ext.data.XmlWriter}.
      * @param {Object} params Http params to be sent to server.
-     * @param {Object} data object populated according to DataReader meta-data.
+     * @param {Object/Object[]} data object populated according to DataReader meta-data.
      */
     render : Ext.emptyFn,
 

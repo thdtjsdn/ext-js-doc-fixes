@@ -68,7 +68,7 @@ Ext.tree.TreeNode = Ext.extend(Ext.data.Node, {
             /**
             * @event textchange
             * Fires when the text for this node is changed
-            * @param {Node} this This node
+            * @param {Ext.tree.TreeNode} this This node
             * @param {String} text The new text
             * @param {String} oldText The old text
             */
@@ -76,7 +76,7 @@ Ext.tree.TreeNode = Ext.extend(Ext.data.Node, {
             /**
             * @event beforeexpand
             * Fires before this node is expanded, return false to cancel.
-            * @param {Node} this This node
+            * @param {Ext.tree.TreeNode} this This node
             * @param {Boolean} deep
             * @param {Boolean} anim
             */
@@ -84,7 +84,7 @@ Ext.tree.TreeNode = Ext.extend(Ext.data.Node, {
             /**
             * @event beforecollapse
             * Fires before this node is collapsed, return false to cancel.
-            * @param {Node} this This node
+            * @param {Ext.tree.TreeNode} this This node
             * @param {Boolean} deep
             * @param {Boolean} anim
             */
@@ -92,68 +92,68 @@ Ext.tree.TreeNode = Ext.extend(Ext.data.Node, {
             /**
             * @event expand
             * Fires when this node is expanded
-            * @param {Node} this This node
+            * @param {Ext.tree.TreeNode} this This node
             */
             'expand',
             /**
             * @event disabledchange
             * Fires when the disabled status of this node changes
-            * @param {Node} this This node
+            * @param {Ext.tree.TreeNode} this This node
             * @param {Boolean} disabled
             */
             'disabledchange',
             /**
             * @event collapse
             * Fires when this node is collapsed
-            * @param {Node} this This node
+            * @param {Ext.tree.TreeNode} this This node
             */
             'collapse',
             /**
             * @event beforeclick
             * Fires before click processing. Return false to cancel the default action.
-            * @param {Node} this This node
+            * @param {Ext.tree.TreeNode} this This node
             * @param {Ext.EventObject} e The event object
             */
             'beforeclick',
             /**
             * @event click
             * Fires when this node is clicked
-            * @param {Node} this This node
+            * @param {Ext.tree.TreeNode} this This node
             * @param {Ext.EventObject} e The event object
             */
             'click',
             /**
             * @event checkchange
             * Fires when a node with a checkbox's checked property changes
-            * @param {Node} this This node
+            * @param {Ext.tree.TreeNode} this This node
             * @param {Boolean} checked
             */
             'checkchange',
             /**
             * @event beforedblclick
             * Fires before double click processing. Return false to cancel the default action.
-            * @param {Node} this This node
+            * @param {Ext.tree.TreeNode} this This node
             * @param {Ext.EventObject} e The event object
             */
             'beforedblclick',
             /**
             * @event dblclick
             * Fires when this node is double clicked
-            * @param {Node} this This node
+            * @param {Ext.tree.TreeNode} this This node
             * @param {Ext.EventObject} e The event object
             */
             'dblclick',
             /**
             * @event contextmenu
             * Fires when this node is right clicked
-            * @param {Node} this This node
+            * @param {Ext.tree.TreeNode} this This node
             * @param {Ext.EventObject} e The event object
             */
             'contextmenu',
             /**
             * @event beforechildrenrendered
             * Fires right before the child nodes for this node are rendered
-            * @param {Node} this This node
+            * @param {Ext.tree.TreeNode} this This node
             */
             'beforechildrenrendered'
         );
@@ -317,7 +317,7 @@ Ext.tree.TreeNode = Ext.extend(Ext.data.Node, {
     /**
      * Sets the href for the node.
      * @param {String} href The href to set
-     * @param {String} (Optional) target The target of the href
+     * @param {String} target (Optional) The target of the href
      */
     setHref : function(href, target){
         this.attributes.href = href;
@@ -598,10 +598,16 @@ Ext.tree.TreeNode = Ext.extend(Ext.data.Node, {
         }
     },
 
+    /**
+     * @private
+     */
     beginUpdate : function(){
         this.childrenRendered = false;
     },
 
+    /**
+     * @private
+     */
     endUpdate : function(){
         if(this.expanded && this.rendered){
             this.renderChildren();

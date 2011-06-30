@@ -158,7 +158,7 @@ Ext.Element.addMethods({
     
     /**
      * Gets the left X coordinate
-     * @param {Boolean} local True to get the local css position instead of page coordinate
+     * @param {Boolean} local (optional) True to get the local css position instead of page coordinate
      * @return {Number}
      */
     getLeft : function(local){
@@ -167,7 +167,7 @@ Ext.Element.addMethods({
 
     /**
      * Gets the right X coordinate of the element (element X position + element width)
-     * @param {Boolean} local True to get the local css position instead of page coordinate
+     * @param {Boolean} local (optional) True to get the local css position instead of page coordinate
      * @return {Number}
      */
     getRight : function(local){
@@ -177,7 +177,7 @@ Ext.Element.addMethods({
 
     /**
      * Gets the top Y coordinate
-     * @param {Boolean} local True to get the local css position instead of page coordinate
+     * @param {Boolean} local (optional) True to get the local css position instead of page coordinate
      * @return {Number}
      */
     getTop : function(local) {
@@ -186,7 +186,7 @@ Ext.Element.addMethods({
 
     /**
      * Gets the bottom Y coordinate of the element (element Y position + element height)
-     * @param {Boolean} local True to get the local css position instead of page coordinate
+     * @param {Boolean} local (optional) True to get the local css position instead of page coordinate
      * @return {Number}
      */
     getBottom : function(local){

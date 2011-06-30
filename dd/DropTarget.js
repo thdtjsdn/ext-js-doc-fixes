@@ -59,7 +59,7 @@ Ext.dd.DropTarget = Ext.extend(Ext.dd.DDTarget, {
      * target.  This default implementation adds the CSS class specified by overClass (if any) to the drop element
      * and returns the dropAllowed config value.  This method should be overridden if drop validation is required.
      * @param {Ext.dd.DragSource} source The drag source that was dragged over this drop target
-     * @param {Event} e The event
+     * @param {Ext.EventObject} e The event
      * @param {Object} data An object containing arbitrary data supplied by the drag source
      * @return {String} status The CSS class that communicates the drop status back to the source so that the
      * underlying {@link Ext.dd.StatusProxy} can be updated
@@ -76,7 +76,7 @@ Ext.dd.DropTarget = Ext.extend(Ext.dd.DDTarget, {
      * This method will be called on every mouse movement while the drag source is over the drop target.
      * This default implementation simply returns the dropAllowed config value.
      * @param {Ext.dd.DragSource} source The drag source that was dragged over this drop target
-     * @param {Event} e The event
+     * @param {Ext.EventObject} e The event
      * @param {Object} data An object containing arbitrary data supplied by the drag source
      * @return {String} status The CSS class that communicates the drop status back to the source so that the
      * underlying {@link Ext.dd.StatusProxy} can be updated
@@ -90,7 +90,7 @@ Ext.dd.DropTarget = Ext.extend(Ext.dd.DDTarget, {
      * out of the target without dropping.  This default implementation simply removes the CSS class specified by
      * overClass (if any) from the drop element.
      * @param {Ext.dd.DragSource} source The drag source that was dragged over this drop target
-     * @param {Event} e The event
+     * @param {Ext.EventObject} e The event
      * @param {Object} data An object containing arbitrary data supplied by the drag source
      */
     notifyOut : function(dd, e, data){
@@ -105,7 +105,7 @@ Ext.dd.DropTarget = Ext.extend(Ext.dd.DDTarget, {
      * implementation that does something to process the drop event and returns true so that the drag source's
      * repair action does not run.
      * @param {Ext.dd.DragSource} source The drag source that was dragged over this drop target
-     * @param {Event} e The event
+     * @param {Ext.EventObject} e The event
      * @param {Object} data An object containing arbitrary data supplied by the drag source
      * @return {Boolean} True if the drop was valid, else false
      */

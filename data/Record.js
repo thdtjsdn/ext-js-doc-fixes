@@ -95,8 +95,23 @@ Ext.data.Record.create = function(o){
 
 Ext.data.Record.PREFIX = 'ext-record';
 Ext.data.Record.AUTO_ID = 1;
+/**
+ * Record event type 'edit'.
+ * @type String
+ * @static
+ */
 Ext.data.Record.EDIT = 'edit';
+/**
+ * Record event type 'reject'.
+ * @type String
+ * @static
+ */
 Ext.data.Record.REJECT = 'reject';
+/**
+ * Record event type 'commit'.
+ * @type String
+ * @static
+ */
 Ext.data.Record.COMMIT = 'commit';
 
 
@@ -111,6 +126,7 @@ Ext.data.Record.COMMIT = 'commit';
  * </ul></div>
  * @param {Record} rec The record being created.  The record does not exist, it's a {@link #phantom}.
  * @return {String} auto-generated string id, <tt>"ext-record-i++'</tt>;
+ * @static
  */
 Ext.data.Record.id = function(rec) {
     rec.phantom = true;
@@ -172,7 +188,10 @@ Ext.data.Record.prototype = {
      */
     phantom : false,
 
-    // private
+    /**
+     * @param {Ext.data.Store} store
+     * @protected
+     */
     join : function(store){
         /**
          * The {@link Ext.data.Store} to which this Record belongs.

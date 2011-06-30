@@ -410,7 +410,10 @@ Ext.form.HtmlEditor = Ext.extend(Ext.form.Field, {
         return doc.body || doc.documentElement;
     },
 
-    // private
+    /**
+     * @return {Document} iframe's document
+     * @protected
+     */
     getDoc : function(){
         return Ext.isIE ? this.getWin().document : (this.iframe.contentDocument || this.getWin().document);
     },
@@ -456,6 +459,10 @@ Ext.form.HtmlEditor = Ext.extend(Ext.form.Field, {
         iframe.src = Ext.SSL_SECURE_URL;
 
         this.wrap.dom.appendChild(iframe);
+        /**
+         * @property iframe
+         * @type HTMLElement
+         */
         this.iframe = iframe;
 
         this.monitorTask = Ext.TaskMgr.start({
@@ -465,6 +472,9 @@ Ext.form.HtmlEditor = Ext.extend(Ext.form.Field, {
         });
     },
 
+    /**
+     * @protected
+     */
     initFrame : function(){
         Ext.TaskMgr.stop(this.monitorTask);
         var doc = this.getDoc();

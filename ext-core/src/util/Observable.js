@@ -277,13 +277,18 @@ myGridPanel.on({
      * Adds the specified events to the list of events which this Observable may fire.
      * @param {Object|String} o Either an object with event names as properties with a value of <code>true</code>
      * or the first event name string if multiple event names are being passed as separate parameters.
-     * @param {string} Optional. Event name if multiple event names are being passed as separate parameters.
+     * @param {...String} eventNames Optional. Event name if multiple event names are being passed as separate parameters.
      * Usage:<pre><code>
 this.addEvents('storeloaded', 'storecleared');
 </code></pre>
      */
     addEvents : function(o){
         var me = this;
+        /**
+         * @property events
+         * @type Object
+         * @private
+         */
         me.events = me.events || {};
         if (typeof o == 'string') {
             var a = arguments,
@@ -342,7 +347,7 @@ var OBSERVABLE = EXTUTIL.Observable.prototype;
  * @param {Object}   scope         (optional) The scope (<code><b>this</b></code> reference) in which the handler function is executed.
  * <b>If omitted, defaults to the object which fired the event.</b>
  * @param {Object}   options       (optional) An object containing handler configuration.
- * @method
+ * @method on
  */
 OBSERVABLE.on = OBSERVABLE.addListener;
 /**
@@ -350,7 +355,7 @@ OBSERVABLE.on = OBSERVABLE.addListener;
  * @param {String}   eventName     The type of event the handler was associated with.
  * @param {Function} handler       The handler to remove. <b>This must be a reference to the function passed into the {@link #addListener} call.</b>
  * @param {Object}   scope         (optional) The scope originally specified for the handler.
- * @method
+ * @method un
  */
 OBSERVABLE.un = OBSERVABLE.removeListener;
 

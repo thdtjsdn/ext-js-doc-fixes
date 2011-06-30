@@ -538,22 +538,24 @@ var myPanel = new Ext.Panel({
         return this;
     },
 
-    /* // protected
+    /**
      * Called after the component is resized, this method is empty by default but can be implemented by any
      * subclass that needs to perform custom logic after a resize occurs.
      * @param {Number} adjWidth The box-adjusted width that was set
      * @param {Number} adjHeight The box-adjusted height that was set
      * @param {Number} rawWidth The width that was originally specified
      * @param {Number} rawHeight The height that was originally specified
+     * @protected
      */
     onResize : function(adjWidth, adjHeight, rawWidth, rawHeight){
     },
 
-    /* // protected
+    /**
      * Called after the component is moved, this method is empty by default but can be implemented by any
      * subclass that needs to perform custom logic after a move occurs.
      * @param {Number} x The new x position
      * @param {Number} y The new y position
+     * @protected
      */
     onPosition : function(x, y){
 

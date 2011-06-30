@@ -105,6 +105,9 @@ Ext.extend(Ext.Layer, Ext.Element, {
         }
     },
 
+    /**
+     * @private
+     */
     disableShadow : function(){
         if(this.shadow){
             this.shadowDisabled = true;
@@ -114,6 +117,9 @@ Ext.extend(Ext.Layer, Ext.Element, {
         }
     },
 
+    /**
+     * @private
+     */
     enableShadow : function(show){
         if(this.shadow){
             this.shadowDisabled = false;

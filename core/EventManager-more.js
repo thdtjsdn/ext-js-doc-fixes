@@ -128,7 +128,10 @@ Ext.apply(Ext.EventManager, function(){
 
 Ext.EventManager.on = Ext.EventManager.addListener;
 
-
+/**
+ * @class Ext.EventObject
+ * @singleton
+ */
 Ext.apply(Ext.EventObjectImpl.prototype, {
    /** Key constant @type Number */
    BACKSPACE: 8,

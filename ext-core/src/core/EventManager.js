@@ -757,6 +757,11 @@ Ext.EventObject = function(){
             if(e == me || (e && e.browserEvent)){ // already wrapped
                 return e;
             }
+            /**
+             * The wrapped browser event.
+             * @property browserEvent
+             * @type Event
+             */
             me.browserEvent = e;
             if(e){
                 // normalize buttons
@@ -764,10 +769,29 @@ Ext.EventObject = function(){
                 if(clickRe.test(e.type) && me.button == -1){
                     me.button = 0;
                 }
+                /**
+                 * The event type (copied from the browser event).
+                 * @property type
+                 * @type String
+                 */
                 me.type = e.type;
+                /**
+                 * True if shift key is pressed (copied from the browser event).
+                 * @property shiftKey
+                 * @type Boolean
+                 */
                 me.shiftKey = e.shiftKey;
-                // mac metaKey behaves like ctrlKey
+                /**
+                 * True if ctrl (meta) key is pressed (copied from the browser event ctrlKey and metaKey, since mac metaKey behaves like ctrlKey).
+                 * @property ctrlKey
+                 * @type Boolean
+                 */
                 me.ctrlKey = e.ctrlKey || e.metaKey || false;
+                /**
+                 * True if alt key is pressed (copied from the browser event).
+                 * @property altKey
+                 * @type Boolean
+                 */
                 me.altKey = e.altKey;
                 // in getKey these will be normalized for the mac
                 me.keyCode = e.keyCode;

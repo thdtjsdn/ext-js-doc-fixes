@@ -232,14 +232,14 @@ Ext.Button = Ext.extend(Ext.BoxComponent, {
              * @event mouseover
              * Fires when the mouse hovers over the button
              * @param {Button} this
-             * @param {Event} e The event object
+             * @param {Ext.EventObject} e The event object
              */
             'mouseover',
             /**
              * @event mouseout
              * Fires when the mouse exits the button
              * @param {Button} this
-             * @param {Event} e The event object
+             * @param {Ext.EventObject} e The event object
              */
             'mouseout',
             /**

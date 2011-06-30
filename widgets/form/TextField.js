@@ -434,7 +434,7 @@ var myField = new Ext.form.NumberField({
      * <code>{@link #regexText}</code>.</p>
      * </div></li>
      * 
-     * @param {Mixed} value The value to validate. The processed raw value will be used if nothing is passed
+     * @param {Mixed} value (optional) The value to validate. The processed raw value will be used if nothing is passed
      * @return {Array} Array of any validation errors
      */
     getErrors: function(value) {

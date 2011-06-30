@@ -273,7 +273,7 @@ tpl.overwrite(panel.body, data);
  *
  * </ul></div>
  *
- * @param {Mixed} config
+ * @param {...Mixed} config
  */
 Ext.XTemplate = function(){
     Ext.XTemplate.superclass.constructor.apply(this, arguments);

@@ -15,6 +15,11 @@
  */
 Ext.Editor = function(field, config){
     if(field.field){
+        /**
+         * The Field this Editor uses for editing.
+         * @type Ext.form.Field
+         * @property field
+         */
         this.field = Ext.create(field.field, 'textfield');
         config = Ext.apply({}, field); // copy so we don't disturb original config
         delete config.field;

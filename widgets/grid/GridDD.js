@@ -36,6 +36,7 @@ Ext.extend(Ext.grid.GridDragZone, Ext.dd.DragZone, {
      * <li><b>rowIndex</b> : Number<div class="sub-desc">The index of the row which receieved the mousedown gesture which triggered the drag.</div></li>
      * <li><b>selections</b> : Array<div class="sub-desc">An Array of the selected Records which are being dragged from the GridPanel.</div></li>
      * </ul></p>
+     * @param {EventObject} e The mouse down event
      */
     getDragData : function(e){
         var t = Ext.lib.Event.getTarget(e);

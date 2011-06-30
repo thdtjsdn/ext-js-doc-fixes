@@ -176,7 +176,8 @@ Ext.extend(T, Ext.Container, {
      * <p>Adds element(s) to the toolbar -- this function takes a variable number of
      * arguments of mixed type and adds them to the toolbar.</p>
      * <br><p><b>Note</b>: See the notes within {@link Ext.Container#add}.</p>
-     * @param {Mixed} arg1 The following types of arguments are all valid:<br />
+     * @param {...Object/Array} component
+     * The following types of arguments are all valid:<br />
      * <ul>
      * <li>{@link Ext.Button} config: A valid button config object (equivalent to {@link #addButton})</li>
      * <li>HtmlElement: Any standard HTML element (equivalent to {@link #addElement})</li>
@@ -188,8 +189,6 @@ Ext.extend(T, Ext.Container, {
      * <li>' ': Creates a spacer element (equivalent to {@link #addSpacer})</li>
      * <li>'->': Creates a fill element (equivalent to {@link #addFill})</li>
      * </ul>
-     * @param {Mixed} arg2
-     * @param {Mixed} etc.
      * @method add
      */
 

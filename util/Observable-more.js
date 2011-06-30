@@ -76,7 +76,13 @@ Ext.apply(Ext.util.Observable.prototype, function(){
     return {
         // these are considered experimental
         // allows for easier interceptor and sequences, including cancelling and overwriting the return value of the call
-        // adds an 'interceptor' called before the original method
+        /**
+         * Experimental: Adds an 'interceptor' called before the original method.
+         * @param {String} method name of the method to intercept
+         * @param {Function} fn interceptor function
+         * @param {Object} scope (optional) scope in that the interceptor function is called (default: this)
+         * @private
+         */
         beforeMethod : function(method, fn, scope){
             getMethodEvent.call(this, method).before.push({
                 fn: fn,
@@ -84,7 +90,13 @@ Ext.apply(Ext.util.Observable.prototype, function(){
             });
         },
 
-        // adds a 'sequence' called after the original method
+        /**
+         * Experimental: Adds a 'sequence' called after the original method.
+         * @param {String} method name of the method after that the sequence is added
+         * @param {Function} fn sequence function
+         * @param {Object} scope (optional) scope in that the sequence function is called (default: this)
+         * @private
+         */
         afterMethod : function(method, fn, scope){
             getMethodEvent.call(this, method).after.push({
                 fn: fn,
@@ -92,6 +104,13 @@ Ext.apply(Ext.util.Observable.prototype, function(){
             });
         },
 
+        /**
+         * Experimental: Remove an interceptor or a 'sequence'.
+         * @param {String} method name of the method the interceptor or sequence function had been attached
+         * @param {Function} fn interceptor or sequence function to remove
+         * @param {Object} scope (optional) scope of the interceptor or sequence function (default: this)
+         * @private
+         */
         removeMethodListener: function(method, fn, scope){
             var e = this.getMethodEvent(method);
             for(var i = 0, len = e.before.length; i < len; i++){

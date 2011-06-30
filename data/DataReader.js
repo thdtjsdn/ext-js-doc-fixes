@@ -151,8 +151,8 @@ Ext.data.DataReader.prototype = {
 
     /**
      * returns extracted, type-cast rows of data.  Iterates to call #extractValues for each row
-     * @param {Object[]/Object} data-root from server response
-     * @param {Boolean} returnRecords [false] Set true to return instances of Ext.data.Record
+     * @param {Object[]/Object} root data-root from server response
+     * @param {Boolean} returnRecords (optional) [false] Set true to return instances of Ext.data.Record
      * @private
      */
     extractData : function(root, returnRecords) {

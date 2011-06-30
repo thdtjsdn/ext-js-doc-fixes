@@ -173,8 +173,8 @@ Ext.grid.PivotGridView = Ext.extend(Ext.grid.GridView, {
     
     /**
      * The master template to use when rendering the GridView. Has a default template
-     * @property Ext.Template
-     * @type masterTpl
+     * @property masterTpl
+     * @type Ext.Template
      */
     masterTpl: new Ext.Template(
         '<div class="x-grid3 x-pivotgrid" hidefocus="true">',

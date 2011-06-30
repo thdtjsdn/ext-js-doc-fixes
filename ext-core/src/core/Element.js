@@ -440,7 +440,7 @@ El.prototype = {
 
     /**
      * Returns the value of the "value" attribute
-     * @param {Boolean} asNumber true to parse the value as a number
+     * @param {Boolean} asNumber (optional) true to parse the value as a number
      * @return {String/Number}
      */
     getValue : function(asNumber){
@@ -570,7 +570,7 @@ el.un('click', this.handlerFn);
 </code></pre>
      * @param {String} eventName The name of the event from which to remove the handler.
      * @param {Function} fn The handler function to remove. <b>This must be a reference to the function passed into the {@link #addListener} call.</b>
-     * @param {Object} scope If a scope (<b><code>this</code></b> reference) was specified when the listener was added,
+     * @param {Object} scope (optional) If a scope (<b><code>this</code></b> reference) was specified when the listener was added,
      * then this must refer to the same object.
      * @return {Ext.Element} this
      */
@@ -972,6 +972,7 @@ El._flyweights = {};
  * @param {String} named (optional) Allows for creation of named reusable flyweights to prevent conflicts
  * (e.g. internally Ext uses "_global")
  * @return {Element} The shared Element object (or null if no matching element was found)
+ * @static
  * @member Ext.Element
  * @method fly
  */

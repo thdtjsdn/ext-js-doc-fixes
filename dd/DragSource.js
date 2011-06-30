@@ -48,6 +48,7 @@ Ext.extend(Ext.dd.DragSource, Ext.dd.DDProxy, {
 
     /**
      * Returns the data object associated with this drag source
+     * @param {EventObject} e The mouse down event
      * @return {Object} data An object containing arbitrary data
      */
     getDragData : function(e){
@@ -71,7 +72,7 @@ Ext.extend(Ext.dd.DragSource, Ext.dd.DDProxy, {
                  * An empty function by default, but provided so that you can perform a custom action
                  * when the dragged item enters the drop target by providing an implementation.
                  * @param {Ext.dd.DragDrop} target The drop target
-                 * @param {Event} e The event object
+                 * @param {Ext.EventObject} e The event object
                  * @param {String} id The id of the dragged element
                  * @method afterDragEnter
                  */
@@ -84,7 +85,7 @@ Ext.extend(Ext.dd.DragSource, Ext.dd.DDProxy, {
      * An empty function by default, but provided so that you can perform a custom action
      * before the dragged item enters the drop target and optionally cancel the onDragEnter.
      * @param {Ext.dd.DragDrop} target The drop target
-     * @param {Event} e The event object
+     * @param {Ext.EventObject} e The event object
      * @param {String} id The id of the dragged element
      * @return {Boolean} isValid True if the drag event is valid, else false to cancel
      */
@@ -112,7 +113,7 @@ Ext.extend(Ext.dd.DragSource, Ext.dd.DDProxy, {
                  * An empty function by default, but provided so that you can perform a custom action
                  * while the dragged item is over the drop target by providing an implementation.
                  * @param {Ext.dd.DragDrop} target The drop target
-                 * @param {Event} e The event object
+                 * @param {Ext.EventObject} e The event object
                  * @param {String} id The id of the dragged element
                  * @method afterDragOver
                  */
@@ -125,7 +126,7 @@ Ext.extend(Ext.dd.DragSource, Ext.dd.DDProxy, {
      * An empty function by default, but provided so that you can perform a custom action
      * while the dragged item is over the drop target and optionally cancel the onDragOver.
      * @param {Ext.dd.DragDrop} target The drop target
-     * @param {Event} e The event object
+     * @param {Ext.EventObject} e The event object
      * @param {String} id The id of the dragged element
      * @return {Boolean} isValid True if the drag event is valid, else false to cancel
      */
@@ -146,7 +147,7 @@ Ext.extend(Ext.dd.DragSource, Ext.dd.DDProxy, {
                  * An empty function by default, but provided so that you can perform a custom action
                  * after the dragged item is dragged out of the target without dropping.
                  * @param {Ext.dd.DragDrop} target The drop target
-                 * @param {Event} e The event object
+                 * @param {Ext.EventObject} e The event object
                  * @param {String} id The id of the dragged element
                  * @method afterDragOut
                  */
@@ -160,7 +161,7 @@ Ext.extend(Ext.dd.DragSource, Ext.dd.DDProxy, {
      * An empty function by default, but provided so that you can perform a custom action before the dragged
      * item is dragged out of the target without dropping, and optionally cancel the onDragOut.
      * @param {Ext.dd.DragDrop} target The drop target
-     * @param {Event} e The event object
+     * @param {Ext.EventObject} e The event object
      * @param {String} id The id of the dragged element
      * @return {Boolean} isValid True if the drag event is valid, else false to cancel
      */
@@ -187,7 +188,7 @@ Ext.extend(Ext.dd.DragSource, Ext.dd.DDProxy, {
                  * An empty function by default, but provided so that you can perform a custom action
                  * after a valid drag drop has occurred by providing an implementation.
                  * @param {Ext.dd.DragDrop} target The drop target
-                 * @param {Event} e The event object
+                 * @param {Ext.EventObject} e The event object
                  * @param {String} id The id of the dropped element
                  * @method afterDragDrop
                  */
@@ -201,7 +202,7 @@ Ext.extend(Ext.dd.DragSource, Ext.dd.DDProxy, {
      * An empty function by default, but provided so that you can perform a custom action before the dragged
      * item is dropped onto the target and optionally cancel the onDragDrop.
      * @param {Ext.dd.DragDrop} target The drop target
-     * @param {Event} e The event object
+     * @param {Ext.EventObject} e The event object
      * @param {String} id The id of the dragged element
      * @return {Boolean} isValid True if the drag drop event is valid, else false to cancel
      */
@@ -217,7 +218,7 @@ Ext.extend(Ext.dd.DragSource, Ext.dd.DDProxy, {
              * An empty function by default, but provided so that you can perform a custom action
              * after a valid drop has occurred by providing an implementation.
              * @param {Object} target The target DD 
-             * @param {Event} e The event object
+             * @param {Ext.EventObject} e The event object
              * @param {String} id The id of the dropped element
              * @method afterInvalidDrop
              */
@@ -245,7 +246,7 @@ Ext.extend(Ext.dd.DragSource, Ext.dd.DDProxy, {
             /**
              * An empty function by default, but provided so that you can perform a custom action
              * after an invalid drop has occurred by providing an implementation.
-             * @param {Event} e The event object
+             * @param {Ext.EventObject} e The event object
              * @param {String} id The id of the dropped element
              * @method afterInvalidDrop
              */
@@ -265,7 +266,7 @@ Ext.extend(Ext.dd.DragSource, Ext.dd.DDProxy, {
      * An empty function by default, but provided so that you can perform a custom action after an invalid
      * drop has occurred.
      * @param {Ext.dd.DragDrop} target The drop target
-     * @param {Event} e The event object
+     * @param {Ext.EventObject} e The event object
      * @param {String} id The id of the dragged element
      * @return {Boolean} isValid True if the invalid drop should proceed, else false to cancel
      */
@@ -290,7 +291,7 @@ Ext.extend(Ext.dd.DragSource, Ext.dd.DDProxy, {
      * An empty function by default, but provided so that you can perform a custom action before the initial
      * drag event begins and optionally cancel it.
      * @param {Object} data An object containing arbitrary data to be shared with drop targets
-     * @param {Event} e The event object
+     * @param {Ext.EventObject} e The event object
      * @return {Boolean} isValid True if the drag event is valid, else false to cancel
      */
     onBeforeDrag : function(data, e){

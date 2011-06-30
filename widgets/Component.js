@@ -128,6 +128,11 @@ Ext.Component = function(config){
     config = config || {};
     if(config.initialConfig){
         if(config.isAction){           // actions
+            /**
+             * The Action assigned to this Component.
+             * @type Ext.Action
+             * @property baseAction
+             */
             this.baseAction = config;
         }
         config = config.initialConfig; // component cloning / action set up
@@ -871,7 +876,7 @@ new Ext.Panel({
         return p;
     },
 
-    /* // protected
+    /**
      * Function to be implemented by Component subclasses to be part of standard component initialization flow (it is empty by default).
      * <pre><code>
 // Traditional constructor:
@@ -899,6 +904,7 @@ Ext.Foo = Ext.extend(Ext.Bar, {
     }
 }
 </code></pre>
+     * @protected
      */
     initComponent : function(){
         /*
@@ -994,6 +1000,11 @@ Ext.Foo = Ext.extend(Ext.Bar, {
             }
             if (this.tpl) {
                 if (!this.tpl.compile) {
+                    /**
+                     * The XTemplate used by this component.
+                     * @property tpl
+                     * @type Ext.XTemplate
+                     */
                     this.tpl = new Ext.XTemplate(this.tpl);
                 }
                 if (this.data) {
@@ -1229,8 +1240,12 @@ var myGrid = new Ext.grid.EditorGridPanel({
         return this;
     },
 
-    // private
-    // default function is not really useful
+    /**
+     * default function is not really useful
+     * @param {Ext.Element} ct container
+     * @param {Ext.Element} position reference child element
+     * @protected
+     */
     onRender : function(ct, position){
         if(!this.el && this.autoEl){
             if(Ext.isString(this.autoEl)){
@@ -1266,7 +1281,10 @@ var myGrid = new Ext.grid.EditorGridPanel({
         return cfg;
     },
 
-    // private
+    /**
+     * @protected
+     * @method
+     */
     afterRender : Ext.emptyFn,
 
     /**
@@ -1314,7 +1332,10 @@ var myGrid = new Ext.grid.EditorGridPanel({
     // private
     beforeDestroy : Ext.emptyFn,
 
-    // private
+    /**
+     * @protected
+     * @method
+     */
     onDestroy  : Ext.emptyFn,
 
     /**
@@ -1399,6 +1420,7 @@ new Ext.Panel({
 
     /**
      * Disable this component and fire the 'disable' event.
+     * @param {Boolean} silent (optional) private
      * @return {Ext.Component} this
      */
     disable : function(/* private */ silent){
@@ -1412,7 +1434,9 @@ new Ext.Panel({
         return this;
     },
 
-    // private
+    /**
+     * @protected
+     */
     onDisable : function(){
         this.getActionEl().addClass(this.disabledClass);
         this.el.dom.disabled = true;
@@ -1431,7 +1455,9 @@ new Ext.Panel({
         return this;
     },
 
-    // private
+    /**
+     * @protected
+     */
     onEnable : function(){
         this.getActionEl().removeClass(this.disabledClass);
         this.el.dom.disabled = false;
@@ -1466,7 +1492,9 @@ new Ext.Panel({
         return this;
     },
 
-    // private
+    /**
+     * @protected
+     */
     onShow : function(){
         this.getVisibilityEl().removeClass('x-hide-' + this.hideMode);
     },
@@ -1494,7 +1522,11 @@ new Ext.Panel({
         }
     },
 
-    // private
+    /**
+     * Method that is called immediately before the <code>hide</code> event is fired. Defaults to setting the
+     * style class <code>'x-hide-' + this.hideMode</code>.
+     * @see #hideMode
+     */
     onHide : function(){
         this.getVisibilityEl().addClass('x-hide-' + this.hideMode);
     },
@@ -1655,7 +1687,10 @@ alert(t.getXTypes());  // alerts 'component/box/field/textfield'
         return this;
     },
 
-    // protected
+    /**
+     * @return {Ext.Element}
+     * @protected
+     */
     getPositionEl : function(){
         return this.positionEl || this.el;
     },
@@ -1762,7 +1797,7 @@ myGridPanel.mon(myGridPanel.getSelectionModel(), {
     },
 
     /**
-     * Returns the next component in the owning container
+     * Returns the next component in the owning container.
      * @return Ext.Component
      */
     nextSibling : function(){
@@ -1776,7 +1811,7 @@ myGridPanel.mon(myGridPanel.getSelectionModel(), {
     },
 
     /**
-     * Returns the previous component in the owning container
+     * Returns the previous component in the owning container.
      * @return Ext.Component
      */
     previousSibling : function(){

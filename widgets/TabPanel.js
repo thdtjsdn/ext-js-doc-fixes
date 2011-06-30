@@ -332,7 +332,7 @@ var tabs = new Ext.TabPanel({
         this.body.addClass('x-tab-panel-body-'+this.tabPosition);
 
         /**
-         * @cfg {Template/XTemplate} itemTpl <p>(Optional) A {@link Ext.Template Template} or
+         * @cfg {Template} itemTpl <p>(Optional) A {@link Ext.Template Template} or
          * {@link Ext.XTemplate XTemplate} which may be provided to process the data object returned from
          * <tt>{@link #getTemplateArgs}</tt> to produce a clickable selector element in the tab strip.</p>
          * <p>The main element created should be a <tt>&lt;li></tt> element. In order for a click event on
@@ -836,7 +836,7 @@ new Ext.TabPanel({
      * Returns the Component which is the currently active tab. <b>Note that before the TabPanel
      * first activates a child Component, this method will return whatever was configured in the
      * {@link #activeTab} config option.</b>
-     * @return {BoxComponent} The currently active child Component if one <i>is</i> active, or the {@link #activeTab} config value.
+     * @return {Ext.Panel} The currently active child Component if one <i>is</i> active, or the {@link #activeTab} config value.
      */
     getActiveTab : function(){
         return this.activeTab || null;
@@ -952,7 +952,10 @@ new Ext.TabPanel({
         return parseInt(this.stripWrap.dom.scrollLeft, 10) || 0;
     },
 
-    // private
+    /**
+     * @return {int} the client width of the scroll area
+     * @protected
+     */
     getScrollArea : function(){
         return parseInt(this.stripWrap.dom.clientWidth, 10) || 0;
     },

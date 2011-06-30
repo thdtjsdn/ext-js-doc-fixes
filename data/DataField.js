@@ -10,9 +10,14 @@
  * passed to {@link Ext.data.Record#create}.</p>
  * <p>Developers do not need to instantiate this class. Instances are created by {@link Ext.data.Record.create}
  * and cached in the {@link Ext.data.Record#fields fields} property of the created Record constructor's <b>prototype.</b></p>
+ * @xtype datafield
  */
 Ext.data.Field = Ext.extend(Object, {
-    
+
+    /**
+     * @constructor
+     * @param {Object} config (optional) The config object
+     */
     constructor : function(config){
         if(Ext.isString(config)){
             config = {name: config};

@@ -76,7 +76,7 @@ Ext.extend(Ext.dd.DropZone, Ext.dd.DropTarget, {
      * Returns a custom data object associated with the DOM node that is the target of the event.  By default
      * this looks up the event target in the {@link Ext.dd.Registry}, although you can override this method to
      * provide your own custom lookup.
-     * @param {Event} e The event
+     * @param {Ext.EventObject} e The event
      * @return {Object} data The custom data
      */
     getTargetFromEvent : function(e){
@@ -91,7 +91,7 @@ Ext.extend(Ext.dd.DropZone, Ext.dd.DropTarget, {
      * @param {Object} nodeData The custom data associated with the drop node (this is the same value returned from 
      * {@link #getTargetFromEvent} for this node)
      * @param {Ext.dd.DragSource} source The drag source that was dragged over this drop zone
-     * @param {Event} e The event
+     * @param {Ext.EventObject} e The event
      * @param {Object} data An object containing arbitrary data supplied by the drag source
      */
     onNodeEnter : function(n, dd, e, data){
@@ -106,7 +106,7 @@ Ext.extend(Ext.dd.DropZone, Ext.dd.DropTarget, {
      * @param {Object} nodeData The custom data associated with the drop node (this is the same value returned from
      * {@link #getTargetFromEvent} for this node)
      * @param {Ext.dd.DragSource} source The drag source that was dragged over this drop zone
-     * @param {Event} e The event
+     * @param {Ext.EventObject} e The event
      * @param {Object} data An object containing arbitrary data supplied by the drag source
      * @return {String} status The CSS class that communicates the drop status back to the source so that the
      * underlying {@link Ext.dd.StatusProxy} can be updated
@@ -122,7 +122,7 @@ Ext.extend(Ext.dd.DropZone, Ext.dd.DropTarget, {
      * @param {Object} nodeData The custom data associated with the drop node (this is the same value returned from
      * {@link #getTargetFromEvent} for this node)
      * @param {Ext.dd.DragSource} source The drag source that was dragged over this drop zone
-     * @param {Event} e The event
+     * @param {Ext.EventObject} e The event
      * @param {Object} data An object containing arbitrary data supplied by the drag source
      */
     onNodeOut : function(n, dd, e, data){
@@ -136,7 +136,7 @@ Ext.extend(Ext.dd.DropZone, Ext.dd.DropTarget, {
      * @param {Object} nodeData The custom data associated with the drop node (this is the same value returned from
      * {@link #getTargetFromEvent} for this node)
      * @param {Ext.dd.DragSource} source The drag source that was dragged over this drop zone
-     * @param {Event} e The event
+     * @param {Ext.EventObject} e The event
      * @param {Object} data An object containing arbitrary data supplied by the drag source
      * @return {Boolean} True if the drop was valid, else false
      */
@@ -149,7 +149,7 @@ Ext.extend(Ext.dd.DropZone, Ext.dd.DropTarget, {
      * but not over any of its registered drop nodes.  The default implementation returns this.dropNotAllowed, so
      * it should be overridden to provide the proper feedback if necessary.
      * @param {Ext.dd.DragSource} source The drag source that was dragged over this drop zone
-     * @param {Event} e The event
+     * @param {Ext.EventObject} e The event
      * @param {Object} data An object containing arbitrary data supplied by the drag source
      * @return {String} status The CSS class that communicates the drop status back to the source so that the
      * underlying {@link Ext.dd.StatusProxy} can be updated
@@ -164,7 +164,7 @@ Ext.extend(Ext.dd.DropZone, Ext.dd.DropTarget, {
      * overridden to provide the appropriate processing of the drop event if you need the drop zone itself to
      * be able to accept drops.  It should return true when valid so that the drag source's repair action does not run.
      * @param {Ext.dd.DragSource} source The drag source that was dragged over this drop zone
-     * @param {Event} e The event
+     * @param {Ext.EventObject} e The event
      * @param {Object} data An object containing arbitrary data supplied by the drag source
      * @return {Boolean} True if the drop was valid, else false
      */
@@ -178,7 +178,7 @@ Ext.extend(Ext.dd.DropZone, Ext.dd.DropTarget, {
      * nodes can process drag drop operations, so if you need the drop zone itself to be able to process drops
      * you should override this method and provide a custom implementation.
      * @param {Ext.dd.DragSource} source The drag source that was dragged over this drop zone
-     * @param {Event} e The event
+     * @param {Ext.EventObject} e The event
      * @param {Object} data An object containing arbitrary data supplied by the drag source
      * @return {String} status The CSS class that communicates the drop status back to the source so that the
      * underlying {@link Ext.dd.StatusProxy} can be updated
@@ -195,7 +195,7 @@ Ext.extend(Ext.dd.DropZone, Ext.dd.DropTarget, {
      * registered nodes ({@link #onNodeEnter}, {@link #onNodeOut}). If the drag source is not currently over a
      * registered node, it will call {@link #onContainerOver}.
      * @param {Ext.dd.DragSource} source The drag source that was dragged over this drop zone
-     * @param {Event} e The event
+     * @param {Ext.EventObject} e The event
      * @param {Object} data An object containing arbitrary data supplied by the drag source
      * @return {String} status The CSS class that communicates the drop status back to the source so that the
      * underlying {@link Ext.dd.StatusProxy} can be updated
@@ -224,7 +224,7 @@ Ext.extend(Ext.dd.DropZone, Ext.dd.DropTarget, {
      * out of the zone without dropping.  If the drag source is currently over a registered node, the notification
      * will be delegated to {@link #onNodeOut} for node-specific handling, otherwise it will be ignored.
      * @param {Ext.dd.DragSource} source The drag source that was dragged over this drop target
-     * @param {Event} e The event
+     * @param {Ext.EventObject} e The event
      * @param {Object} data An object containing arbitrary data supplied by the drag zone
      */
     notifyOut : function(dd, e, data){
@@ -240,7 +240,7 @@ Ext.extend(Ext.dd.DropZone, Ext.dd.DropTarget, {
      * is a node registered for that event, it will delegate to {@link #onNodeDrop} for node-specific handling,
      * otherwise it will call {@link #onContainerDrop}.
      * @param {Ext.dd.DragSource} source The drag source that was dragged over this drop zone
-     * @param {Event} e The event
+     * @param {Ext.EventObject} e The event
      * @param {Object} data An object containing arbitrary data supplied by the drag source
      * @return {Boolean} True if the drop was valid, else false
      */

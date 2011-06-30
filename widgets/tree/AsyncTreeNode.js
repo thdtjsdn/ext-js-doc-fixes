@@ -18,13 +18,13 @@
     /**
     * @event beforeload
     * Fires before this node is loaded, return false to cancel
-    * @param {Node} this This node
+    * @param {Ext.tree.AsyncTreeNode} this This node
     */
     this.addEvents('beforeload', 'load');
     /**
     * @event load
     * Fires when this node is loaded
-    * @param {Node} this This node
+    * @param {Ext.tree.AsyncTreeNode} this This node
     */
     /**
      * The loader used by this node (defaults to using the tree's defined loader)
@@ -68,6 +68,13 @@ Ext.extend(Ext.tree.AsyncTreeNode, Ext.tree.TreeNode, {
         return this.loading;  
     },
     
+    /**
+     * @private
+     * @param {Boolean} deep
+     * @param {Boolean} anim
+     * @param {Function} callback (optional)
+     * @param {Object} scope (optional)
+     */
     loadComplete : function(deep, anim, callback, scope){
         this.loading = false;
         this.loaded = true;

@@ -596,7 +596,7 @@ tb.{@link #doLayout}();             // refresh the layout
      * Component has been inserted.
      * @param {Number} index The index at which the Component will be inserted
      * into the Container's items collection
-     * @param {Ext.Component} component The child Component to insert.<br><br>
+     * @param {Ext.Component|Object} component The child Component to insert.<br><br>
      * Ext uses lazy rendering, and will only render the inserted Component should
      * it become necessary.<br><br>
      * A Component config object may be passed in order to avoid the overhead of
@@ -792,9 +792,7 @@ tb.{@link #doLayout}();             // refresh the layout
      * @param {Boolean} shallow (optional) True to only calc the layout of this component, and let child components auto
      * calc layouts as required (defaults to false, which calls doLayout recursively for each subcontainer)
      * @param {Boolean} force (optional) True to force a layout to occur, even if the item is hidden.
-     * @return {Ext.Container} this
      */
-
     doLayout : function(shallow, force){
         var rendered = this.rendered,
             forceLayout = force || this.forceLayout;

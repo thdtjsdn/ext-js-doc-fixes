@@ -94,7 +94,7 @@ isHandle   True if the element passed in triggers<br />
 
     /**
      * Returns the handle that is registered for the DOM node that is the target of the event
-     * @param {Event} e The event
+     * @param {Ext.EventObject} e The event
      * @return {Object} handle The custom handle data
      */
         getHandleFromEvent : function(e){
@@ -116,7 +116,7 @@ isHandle   True if the element passed in triggers<br />
 
     /**
      * Returns a custom data object that is registered for the DOM node that is the target of the event
-     * @param {Event} e The event
+     * @param {Ext.EventObject} e The event
      * @return {Object} data The custom data
      */
         getTargetFromEvent : function(e){

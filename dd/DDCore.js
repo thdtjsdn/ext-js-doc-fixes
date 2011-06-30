@@ -370,7 +370,7 @@ Ext.dd.DragDrop.prototype = {
      * Abstract method called during the onMouseMove event while dragging an
      * object.
      * @method onDrag
-     * @param {Event} e the mousemove event
+     * @param {Ext.EventObject} e the mousemove event
      */
     onDrag: function(e) { /* override this */ },
 
@@ -378,7 +378,7 @@ Ext.dd.DragDrop.prototype = {
      * Abstract method called when this element fist begins hovering over
      * another DragDrop obj
      * @method onDragEnter
-     * @param {Event} e the mousemove event
+     * @param {Ext.EventObject} e the mousemove event
      * @param {String|DragDrop[]} id In POINT mode, the element
      * id this is hovering over.  In INTERSECT mode, an array of one or more
      * dragdrop items being hovered over.
@@ -396,7 +396,7 @@ Ext.dd.DragDrop.prototype = {
      * Abstract method called when this element is hovering over another
      * DragDrop obj
      * @method onDragOver
-     * @param {Event} e the mousemove event
+     * @param {Ext.EventObject} e the mousemove event
      * @param {String|DragDrop[]} id In POINT mode, the element
      * id this is hovering over.  In INTERSECT mode, an array of dd items
      * being hovered over.
@@ -413,7 +413,7 @@ Ext.dd.DragDrop.prototype = {
     /**
      * Abstract method called when we are no longer hovering over an element
      * @method onDragOut
-     * @param {Event} e the mousemove event
+     * @param {Ext.EventObject} e the mousemove event
      * @param {String|DragDrop[]} id In POINT mode, the element
      * id this was hovering over.  In INTERSECT mode, an array of dd items
      * that the mouse is no longer over.
@@ -431,7 +431,7 @@ Ext.dd.DragDrop.prototype = {
      * Abstract method called when this item is dropped on another DragDrop
      * obj
      * @method onDragDrop
-     * @param {Event} e the mouseup event
+     * @param {Ext.EventObject} e the mouseup event
      * @param {String|DragDrop[]} id In POINT mode, the element
      * id this was dropped on.  In INTERSECT mode, an array of dd items this
      * was dropped on.
@@ -442,7 +442,7 @@ Ext.dd.DragDrop.prototype = {
      * Abstract method called when this item is dropped on an area with no
      * drop target
      * @method onInvalidDrop
-     * @param {Event} e the mouseup event
+     * @param {Ext.EventObject} e the mouseup event
      */
     onInvalidDrop: function(e) { /* override this */ },
 
@@ -456,14 +456,14 @@ Ext.dd.DragDrop.prototype = {
     /**
      * Fired when we are done dragging the object
      * @method endDrag
-     * @param {Event} e the mouseup event
+     * @param {Ext.EventObject} e the mouseup event
      */
     endDrag: function(e) { /* override this */ },
 
     /**
      * Code executed immediately before the onMouseDown event
      * @method b4MouseDown
-     * @param {Event} e the mousedown event
+     * @param {Ext.EventObject} e the mousedown event
      * @private
      */
     b4MouseDown: function(e) {  },
@@ -471,14 +471,14 @@ Ext.dd.DragDrop.prototype = {
     /**
      * Event handler that fires when a drag/drop obj gets a mousedown
      * @method onMouseDown
-     * @param {Event} e the mousedown event
+     * @param {Ext.EventObject} e the mousedown event
      */
     onMouseDown: function(e) { /* override this */ },
 
     /**
      * Event handler that fires when a drag/drop obj gets a mouseup
      * @method onMouseUp
-     * @param {Event} e the mouseup event
+     * @param {Ext.EventObject} e the mouseup event
      */
     onMouseUp: function(e) { /* override this */ },
 
@@ -833,7 +833,7 @@ Ext.dd.DragDrop.prototype = {
     /**
      * Fired when this object is clicked
      * @method handleMouseDown
-     * @param {Event} e
+     * @param {Ext.EventObject} e
      * @param {Ext.dd.DragDrop} oDD the clicked dd object (this dd obj)
      * @private
      */
@@ -1657,7 +1657,7 @@ Ext.dd.DragDropMgr = function() {
          * Fired after a registered DragDrop object gets the mousedown event.
          * Sets up the events required to track the object being dragged
          * @method handleMouseDown
-         * @param {Event} e the event
+         * @param {Ext.EventObject} e the event
          * @param oDD the DragDrop object being dragged
          * @private
          * @static
@@ -1715,7 +1715,7 @@ Ext.dd.DragDropMgr = function() {
          * Internal function to handle the mouseup event.  Will be invoked
          * from the context of the document.
          * @method handleMouseUp
-         * @param {Event} e the event
+         * @param {Ext.EventObject} e the event
          * @private
          * @static
          */
@@ -1744,7 +1744,7 @@ Ext.dd.DragDropMgr = function() {
          * Utility to stop event propagation and event default, if these
          * features are turned on.
          * @method stopEvent
-         * @param {Event} e the event as returned by this.getEvent()
+         * @param {Ext.EventObject} e the event as returned by this.getEvent()
          * @static
          */
         stopEvent: function(e){
@@ -1761,7 +1761,7 @@ Ext.dd.DragDropMgr = function() {
          * Internal function to clean up event handlers after the drag
          * operation is complete
          * @method stopDrag
-         * @param {Event} e the event
+         * @param {Ext.EventObject} e the event
          * @private
          * @static
          */
@@ -1790,7 +1790,7 @@ Ext.dd.DragDropMgr = function() {
          * down during the mousemove event.  Firefox doesn't give us the
          * button state on the mousemove event.
          * @method handleMouseMove
-         * @param {Event} e the event
+         * @param {Ext.EventObject} e the event
          * @private
          * @static
          */
@@ -1832,7 +1832,7 @@ Ext.dd.DragDropMgr = function() {
          * Iterates over all of the DragDrop elements to find ones we are
          * hovering over or dropping on
          * @method fireEvents
-         * @param {Event} e the event
+         * @param {Ext.EventObject} e the event
          * @param {boolean} isDrop is this a drop op or a mouseover op?
          * @private
          * @static

@@ -324,7 +324,9 @@ var form = new Ext.form.FormPanel({
         this.clearInvalid();
     },
 
-    // private
+    /**
+     * @protected
+     */
     initEvents : function(){
         this.mon(this.el, Ext.EventManager.getKeyEvent(), this.fireKey,  this);
         this.mon(this.el, 'focus', this.onFocus, this);
@@ -334,7 +336,9 @@ var form = new Ext.form.FormPanel({
         this.mon(this.el, 'blur', this.onBlur, this, this.inEditor ? {buffer:10} : null);
     },
 
-    // private
+    /**
+     * @protected
+     */
     preFocus: Ext.emptyFn,
 
     // private
@@ -427,7 +431,7 @@ var form = new Ext.form.FormPanel({
      * with the first and false is returned, otherwise true is returned. Previously, subclasses were invited
      * to provide an implementation of this to process validations - from 3.2 onwards getErrors should be
      * overridden instead.
-     * @param {Mixed} The current value of the field
+     * @param {Mixed} value The current value of the field
      * @return {Boolean} True if all validations passed, false if one or more failed
      */
      validateValue : function(value) {
@@ -446,6 +450,7 @@ var form = new Ext.form.FormPanel({
      * Runs this field's validators and returns an array of error messages for any validation failures.
      * This is called internally during validation and would not usually need to be used manually.
      * Each subclass should override or augment the return value to provide their own errors
+     * @param {Mixed} value (optional) The value to validate. The processed raw value will be used if nothing is passed
      * @return {Array} All error messages for this field
      */
     getErrors: function() {
@@ -551,7 +556,10 @@ var form = new Ext.form.FormPanel({
         this.errorEl.setWidth(this.getErrorCt().getWidth(true) - 20);
     },
 
-    // Alignment for 'side' target
+    /**
+     * Alignment for 'side' target
+     * @protected
+     */
     alignErrorIcon : function(){
         this.errorIcon.alignTo(this.el, 'tl-tr', [2, 0]);
     },
@@ -595,6 +603,7 @@ var form = new Ext.form.FormPanel({
     /**
      * Sets a data value into the field and validates it.  To set the value directly without validation see {@link #setRawValue}.
      * @param {Mixed} value The value to set
+     * @param {Boolean} flag (optional) a boolean flag used by some subclasses
      * @return {Ext.form.Field} this
      */
     setValue : function(v){

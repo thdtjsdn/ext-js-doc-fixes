@@ -274,7 +274,7 @@ viewConfig: {
              * Internal UI Event. Fired after a row has been updated.
              * @param {Ext.grid.GridView} view
              * @param {Number} firstRow The index of the row updated.
-             * @param {Ext.data.record} record The Record backing the row updated.
+             * @param {Ext.data.Record} record The Record backing the row updated.
              */
             'rowupdated',
             
@@ -293,8 +293,8 @@ viewConfig: {
     
     /**
      * The master template to use when rendering the GridView. Has a default template
-     * @property Ext.Template
-     * @type masterTpl
+     * @property masterTpl
+     * @type Ext.Template
      */
     masterTpl: new Ext.Template(
         '<div class="x-grid3" hidefocus="true">',

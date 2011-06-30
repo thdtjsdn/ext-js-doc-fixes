@@ -57,7 +57,7 @@ var t = new Ext.Template(
  * </ul></div>
  * </div></li>
  * </ul></div>
- * @param {Mixed} config
+ * @param {...Mixed} config
  */
 Ext.Template = function(html){
     var me = this,

@@ -240,6 +240,7 @@ Ext.form.CheckboxGroup = Ext.extend(Ext.form.Field, {
     /**
      * Runs CheckboxGroup's validations and returns an array of any errors. The only error by default
      * is if allowBlank is set to true and no items are checked.
+     * @param {Mixed} value (optional) The value to validate. The processed raw value will be used if nothing is passed
      * @return {Array} Array of all validation errors
      */
     getErrors: function() {

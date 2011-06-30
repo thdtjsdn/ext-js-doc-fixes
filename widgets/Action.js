@@ -161,7 +161,8 @@ Ext.Action = Ext.extend(Object, {
     },
 
     /**
-     * Returns true if the components using this action are currently disabled, else returns false.  
+     * Returns true if the components using this action are currently disabled, else returns false.
+     * @return {Boolean} whether the components using this action are currently disabled
      */
     isDisabled : function(){
         return this.initialConfig.disabled;
@@ -192,7 +193,8 @@ Ext.Action = Ext.extend(Object, {
     },
 
     /**
-     * Returns true if the components using this action are currently hidden, else returns false.  
+     * Returns true if the components using this action are currently hidden, else returns false.
+     * @return {Boolean} whether the components using this action are currently hidden
      */
     isHidden : function(){
         return this.initialConfig.hidden;
@@ -214,7 +216,7 @@ Ext.Action = Ext.extend(Object, {
      * Executes the specified function once for each Component currently tied to this action.  The function passed
      * in should accept a single argument that will be an object that supports the basic Action config/method interface.
      * @param {Function} fn The function to execute for each component
-     * @param {Object} scope The scope (<code>this</code> reference) in which the function is executed.  Defaults to the Component.
+     * @param {Object} scope (optional) The scope (<code>this</code> reference) in which the function is executed.  Defaults to the Component.
      */
     each : function(fn, scope){
         Ext.each(this.items, fn, scope);
@@ -228,13 +230,19 @@ Ext.Action = Ext.extend(Object, {
         }
     },
 
-    // private
+    /**
+     * @private
+     * @param {Ext.Component} comp
+     */
     addComponent : function(comp){
         this.items.push(comp);
         comp.on('destroy', this.removeComponent, this);
     },
 
-    // private
+    /**
+     * @private
+     * @param {Ext.Component} comp
+     */
     removeComponent : function(comp){
         this.items.remove(comp);
     },
@@ -243,9 +251,7 @@ Ext.Action = Ext.extend(Object, {
      * Executes this action manually using the handler function specified in the original config object
      * or the handler function set with <code>{@link #setHandler}</code>.  Any arguments passed to this
      * function will be passed on to the handler function.
-     * @param {Mixed} arg1 (optional) Variable number of arguments passed to the handler function
-     * @param {Mixed} arg2 (optional)
-     * @param {Mixed} etc... (optional)
+     * @param {...Mixed} args Variable number of arguments passed to the handler function
      */
     execute : function(){
         this.initialConfig.handler.apply(this.initialConfig.scope || window, arguments);

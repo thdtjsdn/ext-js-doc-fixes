@@ -128,7 +128,7 @@ Ext.Element.addMethods({
     /**
      * Returns the region of the given element.
      * The element must be part of the DOM tree to have a region (display:none or elements not appended return false).
-     * @return {Region} A Ext.lib.Region containing "top, left, bottom, right" member data.
+     * @return {Ext.lib.Region} A Ext.lib.Region containing "top, left, bottom, right" member data.
      */
     getRegion : function(){
         return Ext.lib.Dom.getRegion(this.dom);

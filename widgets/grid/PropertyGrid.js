@@ -35,7 +35,7 @@ Ext.grid.PropertyRecord = Ext.data.Record.create([
  * required for compatibility with the underlying store. Generally this class should not need to be used directly --
  * the grid's data should be accessed from the underlying store via the {@link #store} property.
  * @constructor
- * @param {Ext.grid.Grid} grid The grid this store will be bound to
+ * @param {Ext.grid.GridPanel} grid The grid this store will be bound to
  * @param {Object} source The source data config object
  */
 Ext.grid.PropertyStore = Ext.extend(Ext.util.Observable, {
@@ -130,7 +130,7 @@ Ext.grid.PropertyStore = Ext.extend(Ext.util.Observable, {
  * @extends Ext.grid.ColumnModel
  * A custom column model for the {@link Ext.grid.PropertyGrid}.  Generally it should not need to be used directly.
  * @constructor
- * @param {Ext.grid.Grid} grid The grid this store will be bound to
+ * @param {Ext.grid.GridPanel} grid The grid this store will be bound to
  * @param {Object} source The source data config object
  */
 Ext.grid.PropertyColumnModel = Ext.extend(Ext.grid.ColumnModel, {

@@ -171,8 +171,8 @@ Ext.tree.TreePanel = Ext.extend(Ext.Panel, {
             * @event append
             * Fires when a new child node is appended to a node in this tree.
             * @param {Tree} tree The owner tree
-            * @param {Node} parent The parent node
-            * @param {Node} node The newly appended node
+            * @param {Ext.tree.TreeNode} parent The parent node
+            * @param {Ext.tree.TreeNode} node The newly appended node
             * @param {Number} index The index of the newly appended node
             */
            'append',
@@ -180,17 +180,17 @@ Ext.tree.TreePanel = Ext.extend(Ext.Panel, {
             * @event remove
             * Fires when a child node is removed from a node in this tree.
             * @param {Tree} tree The owner tree
-            * @param {Node} parent The parent node
-            * @param {Node} node The child node removed
+            * @param {Ext.tree.TreeNode} parent The parent node
+            * @param {Ext.tree.TreeNode} node The child node removed
             */
            'remove',
            /**
             * @event movenode
             * Fires when a node is moved to a new location in the tree
             * @param {Tree} tree The owner tree
-            * @param {Node} node The node moved
-            * @param {Node} oldParent The old parent of this node
-            * @param {Node} newParent The new parent of this node
+            * @param {Ext.tree.TreeNode} node The node moved
+            * @param {Ext.tree.TreeNode} oldParent The old parent of this node
+            * @param {Ext.tree.TreeNode} newParent The new parent of this node
             * @param {Number} index The index it was moved to
             */
            'movenode',
@@ -198,34 +198,34 @@ Ext.tree.TreePanel = Ext.extend(Ext.Panel, {
             * @event insert
             * Fires when a new child node is inserted in a node in this tree.
             * @param {Tree} tree The owner tree
-            * @param {Node} parent The parent node
-            * @param {Node} node The child node inserted
-            * @param {Node} refNode The child node the node was inserted before
+            * @param {Ext.tree.TreeNode} parent The parent node
+            * @param {Ext.tree.TreeNode} node The child node inserted
+            * @param {Ext.tree.TreeNode} refNode The child node the node was inserted before
             */
            'insert',
            /**
             * @event beforeappend
             * Fires before a new child is appended to a node in this tree, return false to cancel the append.
             * @param {Tree} tree The owner tree
-            * @param {Node} parent The parent node
-            * @param {Node} node The child node to be appended
+            * @param {Ext.tree.TreeNode} parent The parent node
+            * @param {Ext.tree.TreeNode} node The child node to be appended
             */
            'beforeappend',
            /**
             * @event beforeremove
             * Fires before a child is removed from a node in this tree, return false to cancel the remove.
             * @param {Tree} tree The owner tree
-            * @param {Node} parent The parent node
-            * @param {Node} node The child node to be removed
+            * @param {Ext.tree.TreeNode} parent The parent node
+            * @param {Ext.tree.TreeNode} node The child node to be removed
             */
            'beforeremove',
            /**
             * @event beforemovenode
             * Fires before a node is moved to a new location in the tree. Return false to cancel the move.
             * @param {Tree} tree The owner tree
-            * @param {Node} node The node being moved
-            * @param {Node} oldParent The parent of the node
-            * @param {Node} newParent The new parent the node is moving to
+            * @param {Ext.tree.TreeNode} node The node being moved
+            * @param {Ext.tree.TreeNode} oldParent The parent of the node
+            * @param {Ext.tree.TreeNode} newParent The new parent the node is moving to
             * @param {Number} index The index it is being moved to
             */
            'beforemovenode',
@@ -233,28 +233,28 @@ Ext.tree.TreePanel = Ext.extend(Ext.Panel, {
             * @event beforeinsert
             * Fires before a new child is inserted in a node in this tree, return false to cancel the insert.
             * @param {Tree} tree The owner tree
-            * @param {Node} parent The parent node
-            * @param {Node} node The child node to be inserted
-            * @param {Node} refNode The child node the node is being inserted before
+            * @param {Ext.tree.TreeNode} parent The parent node
+            * @param {Ext.tree.TreeNode} node The child node to be inserted
+            * @param {Ext.tree.TreeNode} refNode The child node the node is being inserted before
             */
             'beforeinsert',
 
             /**
             * @event beforeload
             * Fires before a node is loaded, return false to cancel
-            * @param {Node} node The node being loaded
+            * @param {Ext.tree.TreeNode} node The node being loaded
             */
             'beforeload',
             /**
             * @event load
             * Fires when a node is loaded
-            * @param {Node} node The node that was loaded
+            * @param {Ext.tree.TreeNode} node The node that was loaded
             */
             'load',
             /**
             * @event textchange
             * Fires when the text for a node is changed
-            * @param {Node} node The node
+            * @param {Ext.tree.TreeNode} node The node
             * @param {String} text The new text
             * @param {String} oldText The old text
             */
@@ -262,7 +262,7 @@ Ext.tree.TreePanel = Ext.extend(Ext.Panel, {
             /**
             * @event beforeexpandnode
             * Fires before a node is expanded, return false to cancel.
-            * @param {Node} node The node
+            * @param {Ext.tree.TreeNode} node The node
             * @param {Boolean} deep
             * @param {Boolean} anim
             */
@@ -270,7 +270,7 @@ Ext.tree.TreePanel = Ext.extend(Ext.Panel, {
             /**
             * @event beforecollapsenode
             * Fires before a node is collapsed, return false to cancel.
-            * @param {Node} node The node
+            * @param {Ext.tree.TreeNode} node The node
             * @param {Boolean} deep
             * @param {Boolean} anim
             */
@@ -278,33 +278,33 @@ Ext.tree.TreePanel = Ext.extend(Ext.Panel, {
             /**
             * @event expandnode
             * Fires when a node is expanded
-            * @param {Node} node The node
+            * @param {Ext.tree.TreeNode} node The node
             */
             'expandnode',
             /**
             * @event disabledchange
             * Fires when the disabled status of a node changes
-            * @param {Node} node The node
+            * @param {Ext.tree.TreeNode} node The node
             * @param {Boolean} disabled
             */
             'disabledchange',
             /**
             * @event collapsenode
             * Fires when a node is collapsed
-            * @param {Node} node The node
+            * @param {Ext.tree.TreeNode} node The node
             */
             'collapsenode',
             /**
             * @event beforeclick
             * Fires before click processing on a node. Return false to cancel the default action.
-            * @param {Node} node The node
+            * @param {Ext.tree.TreeNode} node The node
             * @param {Ext.EventObject} e The event object
             */
             'beforeclick',
             /**
             * @event click
             * Fires when a node is clicked
-            * @param {Node} node The node
+            * @param {Ext.tree.TreeNode} node The node
             * @param {Ext.EventObject} e The event object
             */
             'click',
@@ -318,21 +318,21 @@ Ext.tree.TreePanel = Ext.extend(Ext.Panel, {
             /**
             * @event checkchange
             * Fires when a node with a checkbox's checked property changes
-            * @param {Node} this This node
+            * @param {Ext.tree.TreeNode} this This node
             * @param {Boolean} checked
             */
             'checkchange',
             /**
             * @event beforedblclick
             * Fires before double click processing on a node. Return false to cancel the default action.
-            * @param {Node} node The node
+            * @param {Ext.tree.TreeNode} node The node
             * @param {Ext.EventObject} e The event object
             */
             'beforedblclick',
             /**
             * @event dblclick
             * Fires when a node is double clicked
-            * @param {Node} node The node
+            * @param {Ext.tree.TreeNode} node The node
             * @param {Ext.EventObject} e The event object
             */
             'dblclick',
@@ -387,7 +387,7 @@ new Ext.tree.TreePanel({
     }
 });
 </code></pre>
-            * @param {Node} node The node
+            * @param {Ext.tree.TreeNode} node The node
             * @param {Ext.EventObject} e The event object
             */
             'contextmenu',
@@ -401,7 +401,7 @@ new Ext.tree.TreePanel({
             /**
             * @event beforechildrenrendered
             * Fires right before the child nodes for a node are rendered
-            * @param {Node} node The node
+            * @param {Ext.tree.TreeNode} node The node
             */
             'beforechildrenrendered',
            /**
@@ -500,7 +500,7 @@ new Ext.tree.TreePanel({
 
     /**
      * Returns this root node for this tree
-     * @return {Node}
+     * @return {Ext.tree.TreeNode}
      */
     getRootNode : function(){
         return this.root;
@@ -509,8 +509,8 @@ new Ext.tree.TreePanel({
     /**
      * Sets the root node for this tree. If the TreePanel has already rendered a root node, the
      * previous root node (and all of its descendants) are destroyed before the new root node is rendered.
-     * @param {Node} node
-     * @return {Node}
+     * @param {Ext.tree.TreeNode} node
+     * @return {Ext.tree.TreeNode}
      */
     setRootNode : function(node){
         this.destroyRoot();
@@ -547,7 +547,7 @@ new Ext.tree.TreePanel({
     /**
      * Gets a node in this tree by its id
      * @param {String} id
-     * @return {Node}
+     * @return {Ext.tree.TreeNode}
      */
     getNodeById : function(id){
         return this.nodeHash[id];
@@ -621,7 +621,7 @@ new Ext.tree.TreePanel({
 
     /**
      * Returns the selection model used by this TreePanel.
-     * @return {TreeSelectionModel} The selection model used by this TreePanel
+     * @return {Ext.tree.DefaultSelectionModel} The selection model used by this TreePanel
      */
     getSelectionModel : function(){
         if(!this.selModel){

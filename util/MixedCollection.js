@@ -9,10 +9,10 @@
  * @extends Ext.util.Observable
  * A Collection class that maintains both numeric indexes and keys and exposes events.
  * @constructor
- * @param {Boolean} allowFunctions Specify <tt>true</tt> if the {@link #addAll}
+ * @param {Boolean} allowFunctions (optional) Specify <tt>true</tt> if the {@link #addAll}
  * function should add function references to the collection. Defaults to
  * <tt>false</tt>.
- * @param {Function} keyFn A function that can accept an item of the type(s) stored in this MixedCollection
+ * @param {Function} keyFn (optional) A function that can accept an item of the type(s) stored in this MixedCollection
  * and return the key value for that item.  This is used when available to look up the key on items that
  * were passed without an explicit key parameter to a MixedCollection method.  Passing this parameter is
  * equivalent to providing an implementation for the {@link #getKey} method.
@@ -76,7 +76,7 @@ Ext.extend(Ext.util.MixedCollection, Ext.util.Observable, {
      * or if the key of the stored items is in a property called <tt><b>id</b></tt>,
      * the MixedCollection will be able to <i>derive</i> the key for the new item.
      * In this case just pass the new item in this parameter.</p>
-     * @param {Object} o The item to add.
+     * @param {Object} o (optional) The item to add.
      * @return {Object} The item added.
      */
     add : function(key, o){
