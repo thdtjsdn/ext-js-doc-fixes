@@ -467,6 +467,11 @@ var combo = new Ext.form.ComboBox({
             }
         }
 
+        /**
+         * The index of the selected record in the store. Use {@link #select} to change. Read-only.
+         * @property selectedIndex
+         * @type int
+         */
         this.selectedIndex = -1;
         if(this.mode == 'local'){
             if(!Ext.isDefined(this.initialConfig.queryDelay)){

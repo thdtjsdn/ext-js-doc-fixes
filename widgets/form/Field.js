@@ -341,7 +341,9 @@ var form = new Ext.form.FormPanel({
      */
     preFocus: Ext.emptyFn,
 
-    // private
+    /**
+     * @protected
+     */
     onFocus : function(){
         this.preFocus();
         if(this.focusClass){
@@ -361,10 +363,14 @@ var form = new Ext.form.FormPanel({
         }
     },
 
-    // private
+    /**
+     * @protected
+     */
     beforeBlur : Ext.emptyFn,
 
-    // private
+    /**
+     * @protected
+     */
     onBlur : function(){
         this.beforeBlur();
         if(this.focusClass){
@@ -382,7 +388,9 @@ var form = new Ext.form.FormPanel({
         this.postBlur();
     },
 
-    // private
+    /**
+     * @protected
+     */
     postBlur : Ext.emptyFn,
 
     /**

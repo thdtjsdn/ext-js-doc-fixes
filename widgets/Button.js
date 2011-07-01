@@ -182,7 +182,7 @@ Ext.Button = Ext.extend(Ext.BoxComponent, {
      */
     /**
      * @property menu
-     * @type Menu
+     * @type Ext.menu.Menu
      * The {@link Ext.menu.Menu Menu} object associated with this Button when configured with the {@link #menu} config option.
      */
     /**

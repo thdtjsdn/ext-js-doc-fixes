@@ -890,7 +890,7 @@ function(grid, rowIndex, columnIndex, e) {
      * Returns the grid's selection model configured by the <code>{@link #selModel}</code>
      * configuration option. If no selection model was configured, this will create
      * and return a {@link Ext.grid.RowSelectionModel RowSelectionModel}.
-     * @return {SelectionModel}
+     * @return {Ext.grid.AbstractSelectionModel}
      */
     getSelectionModel : function(){
         if(!this.selModel){

@@ -95,7 +95,7 @@ Ext.SplitBar = function(dragElement, resizingElement, orientation, placement, ex
     this.dragSpecs = {};
 
     /**
-     * @private The adapter to use to positon and resize elements
+     * @private The adapter to use to position and resize elements
      */
     this.adapter = new Ext.SplitBar.BasicLayoutAdapter();
     this.adapter.init(this);
@@ -209,7 +209,7 @@ Ext.extend(Ext.SplitBar, Ext.util.Observable, {
 
     /**
      * Get the adapter this SplitBar uses
-     * @return The adapter object
+     * @return {Object} The adapter object
      */
     getAdapter : function(){
         return this.adapter;

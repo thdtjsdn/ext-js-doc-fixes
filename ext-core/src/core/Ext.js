@@ -408,7 +408,7 @@ Ext.urlDecode("foo=1&bar=2&bar=3&bar=4", false); // returns {foo: "1", bar: ["2"
          * Converts any iterable (numeric indices and a length property) into a true array
          * Don't use this on strings. IE doesn't support "abc"[0] which this implementation depends on.
          * For strings, use this instead: "abc".match(/./g) => [a,b,c];
-         * @param {Iterable} the iterable object to be turned into a true Array.
+         * @param {Object} iterable the iterable object to be turned into a true Array.
          * @return (Array) array
          */
          toArray : function(){
@@ -460,7 +460,7 @@ Ext.urlDecode("foo=1&bar=2&bar=3&bar=4", false); // returns {foo: "1", bar: ["2"
          * @param {Object} scope The scope (<code>this</code> reference) in which the specified function is executed.
          * Defaults to the <code>item</code> at the current <code>index</code>
          * within the passed <code>array</code>.
-         * @return See description for the fn parameter.
+         * @return {Number} See description for the fn parameter.
          */
         each : function(array, fn, scope){
             if(Ext.isEmpty(array, true)){

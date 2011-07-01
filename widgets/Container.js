@@ -826,6 +826,11 @@ tb.{@link #doLayout}();             // refresh the layout
         delete this.forceLayout;
     },
 
+    /**
+     * @param {Boolean} shallow (optional)
+     * @param {Boolean} force (optional)
+     * @protected
+     */
     onLayout : Ext.emptyFn,
 
     // private

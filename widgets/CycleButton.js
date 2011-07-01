@@ -58,7 +58,7 @@ Ext.CycleButton = Ext.extend(Ext.SplitButton, {
      */
     /**
      * @property menu
-     * @type Menu
+     * @type Ext.menu.Menu
      * The {@link Ext.menu.Menu Menu} object used to display the {@link Ext.menu.CheckItem CheckItems} representing the available choices.
      */
 

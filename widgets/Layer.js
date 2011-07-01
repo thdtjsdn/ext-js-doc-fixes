@@ -118,6 +118,7 @@ Ext.extend(Ext.Layer, Ext.Element, {
     },
 
     /**
+     * @param {Boolean} show (optional)
      * @private
      */
     enableShadow : function(show){

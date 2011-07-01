@@ -113,12 +113,12 @@ Ext.BoxComponent = Ext.extend(Ext.Component, {
      * The page level y coordinate for this component if contained within a positioning container.
      */
     /**
-     * @cfg {Number} height
+     * @cfg {Number/String} height
      * The height of this component in pixels (defaults to auto).
      * <b>Note</b> to express this dimension as a percentage or offset see {@link Ext.Component#anchor}.
      */
     /**
-     * @cfg {Number} width
+     * @cfg {Number/String} width
      * The width of this component in pixels (defaults to auto).
      * <b>Note</b> to express this dimension as a percentage or offset see {@link Ext.Component#anchor}.
      */

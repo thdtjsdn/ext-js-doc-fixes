@@ -1329,12 +1329,13 @@ var myGrid = new Ext.grid.EditorGridPanel({
         }
     },
 
-    // private
+    /**
+     * @protected
+     */
     beforeDestroy : Ext.emptyFn,
 
     /**
      * @protected
-     * @method
      */
     onDestroy  : Ext.emptyFn,
 

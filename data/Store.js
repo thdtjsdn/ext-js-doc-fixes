@@ -717,7 +717,7 @@ sortInfo: {
 
     /**
      * Remove all Records from the Store and fires the {@link #clear} event.
-     * @param {Boolean} silent [false] Defaults to <tt>false</tt>.  Set <tt>true</tt> to not fire clear event.
+     * @param {Boolean} silent (optional) Defaults to <tt>false</tt>.  Set <tt>true</tt> to not fire clear event.
      */
     removeAll : function(silent){
         var items = [];

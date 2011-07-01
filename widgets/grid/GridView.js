@@ -624,8 +624,11 @@ viewConfig: {
     },
 
     /* ----------------------------------- Scrolling functions -------------------------------------------*/
-    
-    // private
+
+    /**
+     * @return {Object} left, top
+     * @private
+     */
     getScrollState : function() {
         var sb = this.scroller.dom;
         

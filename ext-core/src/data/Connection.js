@@ -219,7 +219,7 @@ Ext.Ajax.request({
          * </ul></p>
          * <p>The options object may also contain any other property which might be needed to perform
          * postprocessing in a callback because it is passed to callback functions.</p>
-         * @return {Number} transactionId The id of the server transaction. This may be used
+         * @return {Object} transaction The server transaction. Opaque object that may be used
          * to cancel the request.
          */
         request : function(o){

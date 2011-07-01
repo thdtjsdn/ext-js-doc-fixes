@@ -84,7 +84,7 @@ Ext.tree.DefaultSelectionModel = Ext.extend(Ext.util.Observable, {
     
     /**
      * Clear all selections
-     * @param {Boolean} silent True to stop the selectionchange event from firing.
+     * @param {Boolean} silent (optional) True to stop the selectionchange event from firing.
      */
     clearSelections : function(silent){
         var n = this.selNode;

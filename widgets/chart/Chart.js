@@ -818,7 +818,7 @@ Ext.chart.TimeAxis = Ext.extend(Ext.chart.Axis, {
     /**
      * The spacing between minor intervals on this axis.
      *
-     * @property majorUnit
+     * @property minorUnit
      * @type Number
      */
     minorUnit: NaN,
@@ -826,7 +826,7 @@ Ext.chart.TimeAxis = Ext.extend(Ext.chart.Axis, {
     /**
      * The time unit used by the minorUnit.
      *
-     * @property majorTimeUnit
+     * @property minorTimeUnit
      * @type String
      */
     minorTimeUnit: null,
