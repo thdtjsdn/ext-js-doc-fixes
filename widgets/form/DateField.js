@@ -16,7 +16,7 @@
 Ext.form.DateField = Ext.extend(Ext.form.TriggerField,  {
     /**
      * @cfg {String} format
-     * The default date format string which can be overriden for localization support.  The format must be
+     * The default date format string which can be overridden for localization support.  The format must be
      * valid according to {@link Date#parseDate} (defaults to <tt>'m/d/Y'</tt>).
      */
     format : "m/d/Y",

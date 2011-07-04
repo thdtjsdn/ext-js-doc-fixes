@@ -130,7 +130,7 @@ Ext.data.DataWriter.prototype = {
     },
 
     /**
-     * abstract method meant to be overridden by all DataWriter extensions.  It's the extension's job to apply the "data" to the "params".
+     * Abstract method meant to be overridden by all DataWriter extensions.  It's the extension's job to apply the "data" to the "params".
      * The data-object provided to render is populated with data according to the meta-info defined in the user's DataReader config,
      * @param {Object} baseParams as defined by {@link Ext.data.Store#baseParams}.  The baseParms must be encoded by the extending class, eg: {@link Ext.data.JsonWriter}, {@link Ext.data.XmlWriter}.
      * @param {Object} params Http params to be sent to server.
@@ -161,7 +161,7 @@ Ext.data.DataWriter.prototype = {
      * related to its rendering, such as {@link #writeAllFields}, {@link Ext.data.Record#phantom phantom}, {@link Ext.data.Record#getChanges getChanges} and
      * {@link Ext.data.DataReader#idProperty idProperty}
      * @param {Ext.data.Record} rec The Record from which to create a hash.
-     * @param {Object} config <b>NOT YET IMPLEMENTED</b>.  Will implement an exlude/only configuration for fine-control over which fields do/don't get rendered.
+     * @param {Object} config <b>NOT YET IMPLEMENTED</b>.  Will implement an exclude/only configuration for fine-control over which fields do/don't get rendered.
      * @return {Object}
      * @protected
      * TODO Implement excludes/only configuration with 2nd param?

@@ -10,7 +10,7 @@
  * <p>This class extends the {@link Ext.grid.GridPanel GridPanel Class} to provide cell editing
  * on selected {@link Ext.grid.Column columns}. The editable columns are specified by providing
  * an {@link Ext.grid.ColumnModel#editor editor} in the {@link Ext.grid.Column column configuration}.</p>
- * <p>Editability of columns may be controlled programatically by inserting an implementation
+ * <p>Editability of columns may be controlled programmatically by inserting an implementation
  * of {@link Ext.grid.ColumnModel#isCellEditable isCellEditable} into the
  * {@link Ext.grid.ColumnModel ColumnModel}.</p>
  * <p>Editing is performed on the value of the <i>field</i> specified by the column's

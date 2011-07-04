@@ -720,7 +720,7 @@ Ext.data.Node = Ext.extend(Ext.util.Observable, {
     },
 
     /**
-     * Interates the child nodes of this node, calling the specified function with each node. The arguments to the function
+     * Iterates the child nodes of this node, calling the specified function with each node. The arguments to the function
      * will be the args provided or the current node. If the function returns false at any point,
      * the iteration stops.
      * @param {Function} fn The function to call

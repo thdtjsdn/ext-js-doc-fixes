@@ -15,7 +15,7 @@
  * {@link Ext.Container#layout layout} config option, and should generally not need to be created directly
  * via the new keyword. See <tt><b>{@link Ext.Container#layout}</b></tt> for additional details.</p>
  *
- * <p>In an application, it will usually be preferrable to use a {@link Ext.form.FormPanel FormPanel}
+ * <p>In an application, it will usually be preferable to use a {@link Ext.form.FormPanel FormPanel}
  * (which is configured with FormLayout as its layout class by default) since it also provides built-in
  * functionality for {@link Ext.form.BasicForm#doAction loading, validating and submitting} the form.</p>
  *
@@ -294,7 +294,7 @@ new Ext.Template(
     /**
      * <p>Provides template arguments for rendering the fully wrapped, labeled and styled form Field.</p>
      * <p>This method returns an object hash containing properties used by the layout's {@link #fieldTpl}
-     * to create a correctly wrapped, labeled and styled form Field. This may be overriden to
+     * to create a correctly wrapped, labeled and styled form Field. This may be overridden to
      * create custom layouts. The properties which must be returned are:</p><div class="mdetail-params"><ul>
      * <li><b><tt>itemCls</tt></b> : String<div class="sub-desc">The CSS class applied to the outermost div wrapper
      * that contains this field label and field element (the default class is <tt>'x-form-item'</tt> and <tt>itemCls</tt>

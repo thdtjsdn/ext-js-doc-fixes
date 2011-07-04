@@ -901,7 +901,7 @@ tb.{@link #doLayout}();             // refresh the layout
     },
 
     /**
-     * Cascades down the component/container heirarchy from this component (called first), calling the specified function with
+     * Cascades down the component/container hierarchy from this component (called first), calling the specified function with
      * each component. The scope (<i>this</i>) of
      * function call will be the scope provided or the current component. The arguments to the function
      * will be the args provided or the current component. If the function returns false at any point,

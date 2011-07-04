@@ -17,7 +17,7 @@ Ext.ToolTip = Ext.extend(Ext.Tip, {
     /**
      * When a Tooltip is configured with the <code>{@link #delegate}</code>
      * option to cause selected child elements of the <code>{@link #target}</code>
-     * Element to each trigger a seperate show event, this property is set to
+     * Element to each trigger a separate show event, this property is set to
      * the DOM element which triggered the show.
      * @type DOMElement
      * @property triggerElement

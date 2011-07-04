@@ -31,7 +31,7 @@ Ext.data.Request.prototype = {
      */
     callback : Ext.emptyFn,
     /**
-     * @cfg {Object} scope The scope of the callback funtion
+     * @cfg {Object} scope The scope of the callback function.
      */
     scope : undefined,
     /**

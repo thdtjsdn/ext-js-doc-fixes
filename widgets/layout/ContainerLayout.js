@@ -269,7 +269,7 @@ Ext.layout.ContainerLayout = Ext.extend(Object, {
      * The {@link Ext.Template Ext.Template} used by Field rendering layout classes (such as
      * {@link Ext.layout.FormLayout}) to create the DOM structure of a fully wrapped,
      * labeled and styled form Field. A default Template is supplied, but this may be
-     * overriden to create custom field structures. The template processes values returned from
+     * overridden to create custom field structures. The template processes values returned from
      * {@link Ext.layout.FormLayout#getTemplateArgs}.
      * @property fieldTpl
      * @type Ext.Template

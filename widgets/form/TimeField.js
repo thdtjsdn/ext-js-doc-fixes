@@ -53,7 +53,7 @@ Ext.form.TimeField = Ext.extend(Ext.form.ComboBox, {
     invalidText : "{0} is not a valid time",
     /**
      * @cfg {String} format
-     * The default time format string which can be overriden for localization support.  The format must be
+     * The default time format string which can be overridden for localization support.  The format must be
      * valid according to {@link Date#parseDate} (defaults to 'g:i A', e.g., '3:15 PM').  For 24-hour time
      * format try 'H:i' instead.
      */

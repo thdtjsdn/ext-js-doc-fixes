@@ -720,7 +720,7 @@ Ext.DomQuery = function(){
          * </ul></div>
          * <p>A filter function returns an Array of DOM elements which conform to the pseudo class.</p>
          * <p>In addition to the provided pseudo classes listed above such as <code>first-child</code> and <code>nth-child</code>,
-         * developers may add additional, custom psuedo class filters to select elements according to application-specific requirements.</p>
+         * developers may add additional, custom pseudo class filters to select elements according to application-specific requirements.</p>
          * <p>For example, to filter <code>&lt;a></code> elements to only return links to <i>external</i> resources:</p>
          * <code><pre>
 Ext.DomQuery.pseudos.external = function(c, v){

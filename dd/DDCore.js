@@ -200,7 +200,7 @@ Ext.dd.DragDrop.prototype = {
     moveOnly: false,
 
     /**
-     * Unlock this instace
+     * Unlock this instance.
      * @method unlock
      */
     unlock: function() {
@@ -238,7 +238,7 @@ Ext.dd.DragDrop.prototype = {
     __ygDragDrop: true,
 
     /**
-     * Set to true when horizontal contraints are applied
+     * Set to true when horizontal constraints are applied
      * @property constrainX
      * @type boolean
      * @private
@@ -246,7 +246,7 @@ Ext.dd.DragDrop.prototype = {
     constrainX: false,
 
     /**
-     * Set to true when vertical contraints are applied
+     * Set to true when vertical constraints are applied
      * @property constrainY
      * @type boolean
      * @private
@@ -316,7 +316,7 @@ Ext.dd.DragDrop.prototype = {
     /**
      * By default the drag and drop instance will only respond to the primary
      * button click (left button for a right-handed mouse).  Set to true to
-     * allow drag and drop to start with any mouse click that is propogated
+     * allow drag and drop to start with any mouse click that is propagated
      * by the browser
      * @property primaryButtonOnly
      * @type boolean
@@ -352,7 +352,7 @@ Ext.dd.DragDrop.prototype = {
 
     /**
      * Abstract method called after a drag/drop object is clicked
-     * and the drag or mousedown time thresholds have beeen met.
+     * and the drag or mousedown time thresholds have been met.
      * @method startDrag
      * @param {int} X click location
      * @param {int} Y click location
@@ -507,7 +507,7 @@ Ext.dd.DragDrop.prototype = {
      this.constrainTo("parent-id");
  };
  </code></pre>
- * Or you can initalize it using the {@link Ext.Element} object:
+ * Or you can initialize it using the {@link Ext.Element} object:
  <pre><code>
  Ext.get("dragDiv1").initDDProxy("proxytest", {dragElId: "existingProxyDiv"}, {
      startDrag : function(){
@@ -641,7 +641,7 @@ Ext.dd.DragDrop.prototype = {
     /**
      * Applies the configuration parameters that were passed into the constructor.
      * This is supposed to happen at each level through the inheritance chain.  So
-     * a DDProxy implentation will execute apply config on DDProxy, DD, and
+     * a DDProxy implementation will execute apply config on DDProxy, DD, and
      * DragDrop in order to get all of the parameters that are available in
      * each object.
      * @method applyConfig
@@ -1589,7 +1589,7 @@ Ext.dd.DragDropMgr = function() {
 
         /**
          * Returns true if the specified dd target is a legal target for
-         * the specifice drag obj
+         * the specific drag obj
          * @method isLegalTarget
          * @param {DragDrop} oDD the drag obj
          * @param {DragDrop} oTargetDD the target
@@ -1695,7 +1695,7 @@ Ext.dd.DragDropMgr = function() {
         },
 
         /**
-         * Fired when either the drag pixel threshol or the mousedown hold
+         * Fired when either the drag pixel threshold or the mousedown hold
          * time threshold has been met.
          * @method startDrag
          * @param x {int} the X position of the original mousedown
@@ -2242,7 +2242,7 @@ Ext.dd.DragDropMgr = function() {
          * Get the wrapper for the DOM element specified
          * @method getElWrapper
          * @param {String} id the id of the element to get
-         * @return {Ext.dd.DDM.ElementWrapper} the wrapped element
+         * @return {Ext.dd.DragDropMgr.ElementWrapper} the wrapped element
          * @private
          * @deprecated This wrapper isn't that useful
          * @static
@@ -2259,7 +2259,7 @@ Ext.dd.DragDropMgr = function() {
         /**
          * Returns the actual DOM element
          * @method getElement
-         * @param {String} id the id of the elment to get
+         * @param {String} id the id of the element to get
          * @return {Object} The element
          * @deprecated use Ext.lib.Ext.getDom instead
          * @static
@@ -2272,7 +2272,7 @@ Ext.dd.DragDropMgr = function() {
          * Returns the style property for the DOM element (i.e.,
          * document.getElById(id).style)
          * @method getCss
-         * @param {String} id the id of the elment to get
+         * @param {String} id the id of the element to get
          * @return {Object} The style property of the element
          * @deprecated use Ext.lib.Dom instead
          * @static
@@ -2465,7 +2465,7 @@ Ext.dd.DragDropMgr = function() {
 
         /**
          * Recursively searches the immediate parent and all child nodes for
-         * the handle element in order to determine wheter or not it was
+         * the handle element in order to determine whether or not it was
          * clicked.
          * @method handleWasClicked
          * @param node the html element to inspect

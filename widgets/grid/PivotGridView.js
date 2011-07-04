@@ -64,7 +64,7 @@ Ext.grid.PivotGridView = Ext.extend(Ext.grid.GridView, {
 ]
 </code></pre>
      * In the example above we have cities nested under countries. The nesting could be deeper if desired - e.g. Continent -> Country ->
-     * State -> City, or any other structure. The only constaint is that the same depth must be used throughout the structure.
+     * State -> City, or any other structure. The only constraint is that the same depth must be used throughout the structure.
      * @return {Array} A tree structure containing the headers to be rendered. Must include the colspan property at each level, which should
      * be the sum of all child nodes beneath this node.
      */

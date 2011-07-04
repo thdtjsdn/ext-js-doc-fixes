@@ -384,7 +384,7 @@ function() {
          * @param {String/Object/Function} url (optional) The url for this request, a config object in the same format
          * supported by {@link #load}, or a function to call to get the url (defaults to the last used url).  Note that while
          * the url used in a load call can be reused by this method, other load config options will not be reused and must be
-         * sepcified as part of a config object passed as this paramter if needed.
+         * specified as part of a config object passed as this parameter if needed.
          * @param {String/Object} params (optional) The parameters to pass as either a url encoded string
          * "&param1=1&param2=2" or as an object {param1: 1, param2: 2}
          * @param {Function} callback (optional) Callback when transaction is complete - called with signature (oElement, bSuccess)

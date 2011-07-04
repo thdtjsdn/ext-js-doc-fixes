@@ -168,7 +168,7 @@ Ext.History = (function () {
 
         /**
          * Add a new token to the history stack. This can be any arbitrary value, although it would
-         * commonly be the concatenation of a component id and another id marking the specifc history
+         * commonly be the concatenation of a component id and another id marking the specific history
          * state of that component.  Example usage:
          * <pre><code>
 // Handle tab changes on a TabPanel

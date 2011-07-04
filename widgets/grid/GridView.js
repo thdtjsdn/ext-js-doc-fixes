@@ -48,7 +48,7 @@ viewConfig: {
      * </ul>
      * The following property will be passed in, and may be appended to:
      * <ul>
-     * <li><code>tstyle</code> : String <div class="sub-desc">A CSS style specification that willl be applied to the &lt;table> element which encapsulates
+     * <li><code>tstyle</code> : String <div class="sub-desc">A CSS style specification that will be applied to the &lt;table> element which encapsulates
      * both the standard grid row, and any expansion row.</div></li>
      * </ul>
      * @param {Store} store The {@link Ext.data.Store} this grid is bound to

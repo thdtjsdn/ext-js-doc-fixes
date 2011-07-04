@@ -6,7 +6,7 @@
  */
 /**
  * @class Ext.util.Format
- * Reusable data formatting functions
+ * Reusable data formatting functions.
  * @singleton
  */
 Ext.util.Format = function() {

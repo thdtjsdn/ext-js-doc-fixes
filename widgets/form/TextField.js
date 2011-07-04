@@ -514,7 +514,7 @@ var myField = new Ext.form.NumberField({
     },
 
     /**
-     * Automatically grows the field to accomodate the width of the text up to the maximum field width allowed.
+     * Automatically grows the field to accommodate the width of the text up to the maximum field width allowed.
      * This only takes effect if <tt><b>{@link #grow}</b> = true</tt>, and fires the {@link #autosize} event.
      */
     autoSize : function(){

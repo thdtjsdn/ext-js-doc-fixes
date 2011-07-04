@@ -237,7 +237,7 @@ myAction.on('complete', function(){
     },
     
     /**
-     * Synchronizes the inner bar width to the proper proportion of the total componet width based
+     * Synchronizes the inner bar width to the proper proportion of the total component width based
      * on the current progress {@link #value}.  This will be called automatically when the ProgressBar
      * is resized by a layout, but if it is rendered auto width, this method can be called from
      * another resize handler to sync the ProgressBar if necessary.

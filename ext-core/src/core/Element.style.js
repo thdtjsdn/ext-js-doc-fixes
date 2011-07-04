@@ -296,7 +296,7 @@ Ext.Element.addMethods(function(){
 
         /**
          * Set the opacity of the element
-         * @param {Float} opacity The new opacity. 0 = transparent, .5 = 50% visibile, 1 = fully visible, etc
+         * @param {Float} opacity The new opacity. 0 = transparent, .5 = 50% visible, 1 = fully visible, etc
          * @param {Boolean/Object} animate (optional) a standard Element animation config object or <tt>true</tt> for
          * the default animation (<tt>{duration: .35, easing: 'easeIn'}</tt>)
          * @return {Ext.Element} this
@@ -414,7 +414,7 @@ Ext.fly('elId').setHeight(150, {
         },
 
         /**
-         * Gets the width of the border(s) for the specified side(s)
+         * Gets the width of the border(s) for the specified side(s).
          * @param {String} side Can be t, l, r, b or any combination of those to add multiple values. For example,
          * passing <tt>'lr'</tt> would get the border <b><u>l</u></b>eft width + the border <b><u>r</u></b>ight width.
          * @return {Number} The width of the sides passed added together

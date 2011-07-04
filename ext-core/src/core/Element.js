@@ -612,7 +612,7 @@ el.un('click', this.handlerFn);
      * <p>Updates the <a href="http://developer.mozilla.org/en/DOM/element.innerHTML">innerHTML</a> of this Element
      * from a specified URL. Note that this is subject to the <a href="http://en.wikipedia.org/wiki/Same_origin_policy">Same Origin Policy</a></p>
      * <p>Updating innerHTML of an element will <b>not</b> execute embedded <tt>&lt;script></tt> elements. This is a browser restriction.</p>
-     * @param {Mixed} options. Either a sring containing the URL from which to load the HTML, or an {@link Ext.Ajax#request} options object specifying
+     * @param {Mixed} options. Either a string containing the URL from which to load the HTML, or an {@link Ext.Ajax#request} options object specifying
      * exactly how to request the HTML.
      * @return {Ext.Element} this
      */

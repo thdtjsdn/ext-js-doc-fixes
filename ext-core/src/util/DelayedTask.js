@@ -8,7 +8,7 @@
  * @class Ext.util.DelayedTask
  * <p> The DelayedTask class provides a convenient way to "buffer" the execution of a method,
  * performing setTimeout where a new timeout cancels the old timeout. When called, the
- * task will wait the specified time period before executing. If durng that time period,
+ * task will wait the specified time period before executing. If during that time period,
  * the task is called again, the original call will be cancelled. This continues so that
  * the function is only called a single time for each iteration.</p>
  * <p>This method is especially useful for things like detecting whether a user has finished

@@ -17,7 +17,7 @@
  * so that functionality must be provided by the developer.</p>
  * <p>In the following example, a simplistic wizard setup is demonstrated.  A button bar is added
  * to the footer of the containing panel to provide navigation buttons.  The buttons will be handled by a
- * common navigation routine -- for this example, the implementation of that routine has been ommitted since
+ * common navigation routine -- for this example, the implementation of that routine has been omitted since
  * it can be any type of custom logic.  Note that other uses of a CardLayout (like a tab control) would require a
  * completely different implementation.  For serious implementations, a better approach would be to extend
  * CardLayout to provide the custom functionality needed.  Example usage:</p>

@@ -64,7 +64,7 @@ Ext.DatePicker = Ext.extend(Ext.BoxComponent, {
     maxText : 'This date is after the maximum date',
     /**
      * @cfg {String} format
-     * The default date format string which can be overriden for localization support.  The format must be
+     * The default date format string which can be overridden for localization support.  The format must be
      * valid according to {@link Date#parseDate} (defaults to <code>'m/d/y'</code>).
      */
     format : 'm/d/y',
@@ -80,12 +80,12 @@ Ext.DatePicker = Ext.extend(Ext.BoxComponent, {
     disabledDatesText : 'Disabled',
     /**
      * @cfg {Array} monthNames
-     * An array of textual month names which can be overriden for localization support (defaults to Date.monthNames)
+     * An array of textual month names which can be overridden for localization support (defaults to Date.monthNames)
      */
     monthNames : Date.monthNames,
     /**
      * @cfg {Array} dayNames
-     * An array of textual day names which can be overriden for localization support (defaults to Date.dayNames)
+     * An array of textual day names which can be overridden for localization support (defaults to Date.dayNames)
      */
     dayNames : Date.dayNames,
     /**

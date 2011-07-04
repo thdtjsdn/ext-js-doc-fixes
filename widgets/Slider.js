@@ -337,7 +337,7 @@ Ext.slider.MultiSlider = Ext.extend(Ext.BoxComponent, {
         /**
          * @property values
          * @type Array
-         * Array of values to initalize the thumbs with
+         * Array of values to initialize the thumbs with
          */
         if (this.values == undefined || Ext.isEmpty(this.values)) this.values = [0];
 

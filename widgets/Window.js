@@ -51,7 +51,7 @@ Ext.Window = Ext.extend(Ext.Panel, {
      */
     /**
     * @cfg {String/Number/Component} defaultButton
-    * <p>Specifies a Component to receive focus when this Window is focussed.</p>
+    * <p>Specifies a Component to receive focus when this Window is focused.</p>
     * <p>This may be one of:</p><div class="mdetail-params"><ul>
     * <li>The index of a footer Button.</li>
     * <li>The id of a Component.</li>
@@ -121,7 +121,7 @@ Ext.Window = Ext.extend(Ext.Panel, {
      * </ul></div>
      * <p><b>Note:</b> This setting does not affect the {@link #close} method
      * which will always {@link Ext.Component#destroy destroy} the window. To
-     * programatically <i>hide</i> a window, call {@link #hide}.</p>
+     * programmatically <i>hide</i> a window, call {@link #hide}.</p>
      */
     closeAction : 'close',
     /**

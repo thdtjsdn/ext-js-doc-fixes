@@ -125,7 +125,7 @@ Ext.Element.addMethods({
     /**
      * Returns the width in pixels of the passed text, or the width of the text in this Element.
      * @param {String} text The text to measure. Defaults to the innerHTML of the element.
-     * @param {Number} min (Optional) The minumum value to return.
+     * @param {Number} min (Optional) The minimum value to return.
      * @param {Number} max (Optional) The maximum value to return.
      * @return {Number} The text width in pixels.
      * @member Ext.Element getTextWidth

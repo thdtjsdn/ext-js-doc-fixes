@@ -239,7 +239,7 @@ sortInfo: {
 }
 </code></pre>
      * <p>The server must produce the requested data block upon receipt of these parameter names.
-     * If different parameter names are required, this property can be overriden using a configuration
+     * If different parameter names are required, this property can be overridden using a configuration
      * property.</p>
      * <p>A {@link Ext.PagingToolbar PagingToolbar} bound to this Store uses this property to determine
      * the parameter names to use in its {@link #load requests}.
@@ -580,7 +580,7 @@ sortInfo: {
     },
 
     /**
-     * builds a DataWriter instance when Store constructor is provided with a writer config-object instead of an instace.
+     * builds a DataWriter instance when Store constructor is provided with a writer config-object instead of an instance.
      * @param {Object} config Writer configuration
      * @return {Ext.data.DataWriter}
      * @private

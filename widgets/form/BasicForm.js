@@ -206,7 +206,7 @@ paramOrder: 'param1|param2|param'
      * of XHR (Ajax) style form submissions. Defaults to <tt>false</tt>.</p>
      * <br><p><b>Note:</b> When using <code>standardSubmit</code>, the
      * <code>options</code> to <code>{@link #submit}</code> are ignored because
-     * Ext's Ajax infrastracture is bypassed. To pass extra parameters (e.g.
+     * Ext's Ajax infrastructure is bypassed. To pass extra parameters (e.g.
      * <code>baseParams</code> and <code>params</code>), utilize hidden fields
      * to submit extra data, for example:</p>
      * <pre><code>
@@ -227,7 +227,7 @@ new Ext.FormPanel({
                 form = fp.getForm();
             if (form.isValid()) {
                 // check if there are baseParams and if
-                // hiddent items have been added already
+                // hidden items have been added already
                 if (fp.baseParams && !fp.paramsAdded) {
                     // add hidden items for all baseParams
                     for (i in fp.baseParams) {

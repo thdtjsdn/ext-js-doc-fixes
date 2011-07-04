@@ -29,7 +29,7 @@ Ext.dd.Registry = function(){
     
     return {
     /**
-     * Resgister a drag drop element
+     * Register a drag drop element.
      * @param {String/HTMLElement} element The id or DOM node to register
      * @param {Object} data (optional) An custom data object that will be passed between the elements that are involved
      * in drag drop operations.  You can populate this object with any arbitrary properties that your own code

@@ -243,7 +243,7 @@ Ext.Component = function(config){
          * @param {Ext.Component} this
          * @param {Object} state The hash of state values returned from the StateProvider. If this
          * event is not vetoed, then the state object is passed to <b><tt>applyState</tt></b>. By default,
-         * that simply copies property values into this Component. The method maybe overriden to
+         * that simply copies property values into this Component. The method maybe overridden to
          * provide custom state restoration.
          */
         'beforestaterestore',
@@ -253,7 +253,7 @@ Ext.Component = function(config){
          * @param {Ext.Component} this
          * @param {Object} state The hash of state values returned from the StateProvider. This is passed
          * to <b><tt>applyState</tt></b>. By default, that simply copies property values into this
-         * Component. The method maybe overriden to provide custom state restoration.
+         * Component. The method maybe overridden to provide custom state restoration.
          */
         'staterestore',
         /**
@@ -262,7 +262,7 @@ Ext.Component = function(config){
          * @param {Ext.Component} this
          * @param {Object} state The hash of state values. This is determined by calling
          * <b><tt>getState()</tt></b> on the Component. This method must be provided by the
-         * developer to return whetever representation of state is required, by default, Ext.Component
+         * developer to return whatever representation of state is required, by default, Ext.Component
          * has a null implementation.
          */
         'beforestatesave',
@@ -1668,7 +1668,7 @@ alert(t.getXTypes());  // alerts 'component/box/field/textfield'
     },
     
     /**
-     * Bubbles up the component/container heirarchy, calling the specified function with each component. The scope (<i>this</i>) of
+     * Bubbles up the component/container hierarchy, calling the specified function with each component. The scope (<i>this</i>) of
      * function call will be the scope provided or the current component. The arguments to the function
      * will be the args provided or the current component. If the function returns false at any point,
      * the bubble is stopped.

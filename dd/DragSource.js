@@ -48,7 +48,7 @@ Ext.extend(Ext.dd.DragSource, Ext.dd.DDProxy, {
 
     /**
      * Returns the data object associated with this drag source
-     * @param {EventObject} e The mouse down event
+     * @param {Ext.EventObject} e The mouse down event
      * @return {Object} data An object containing arbitrary data
      */
     getDragData : function(e){

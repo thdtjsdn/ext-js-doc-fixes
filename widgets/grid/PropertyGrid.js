@@ -10,7 +10,7 @@
  * {@link Ext.grid.PropertyGrid}.  Typically, PropertyRecords do not need to be created directly as they can be
  * created implicitly by simply using the appropriate data configs either via the {@link Ext.grid.PropertyGrid#source}
  * config property or by calling {@link Ext.grid.PropertyGrid#setSource}.  However, if the need arises, these records
- * can also be created explicitly as shwon below.  Example usage:
+ * can also be created explicitly as shown below.  Example usage:
  * <pre><code>
 var rec = new Ext.grid.PropertyRecord({
     name: 'Birthday',

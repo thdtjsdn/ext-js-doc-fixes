@@ -108,7 +108,7 @@ btn.on('click', Ext.createDelegate(sayHi, btn, ['Fred']));
     },
 
     /**
-     * Calls this function after the number of millseconds specified, optionally in a specific scope. Example usage:
+     * Calls this function after the number of milliseconds specified, optionally in a specific scope. Example usage:
      * <pre><code>
 var sayHi = function(name){
     alert('Hi, ' + name);

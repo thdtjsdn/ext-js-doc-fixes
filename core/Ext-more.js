@@ -11,7 +11,7 @@
 Ext.ns("Ext.grid", "Ext.list", "Ext.dd", "Ext.tree", "Ext.form", "Ext.menu",
        "Ext.state", "Ext.layout.boxOverflow", "Ext.app", "Ext.ux", "Ext.chart", "Ext.direct", "Ext.slider");
     /**
-     * Namespace alloted for extensions to the framework.
+     * Namespace allotted for extensions to the framework.
      * @property ux
      * @type Object
      */
@@ -297,7 +297,7 @@ ImageComponent = Ext.extend(Ext.BoxComponent, {
         /**
          * Returns the minimum value in the Array.
          * @param {Array|NodeList} arr The Array from which to select the minimum value.
-         * @param {Function} comp (optional) a function to perform the comparision which determines minimization.
+         * @param {Function} comp (optional) a function to perform the comparison which determines minimization.
          *                   If omitted the "<" operator will be used. Note: gt = 1; eq = 0; lt = -1
          * @return {Object} The minimum value in the Array.
          */
@@ -313,7 +313,7 @@ ImageComponent = Ext.extend(Ext.BoxComponent, {
         /**
          * Returns the maximum value in the Array
          * @param {Array|NodeList} arr The Array from which to select the maximum value.
-         * @param {Function} comp (optional) a function to perform the comparision which determines maximization.
+         * @param {Function} comp (optional) a function to perform the comparison which determines maximization.
          *                   If omitted the ">" operator will be used. Note: gt = 1; eq = 0; lt = -1
          * @return {Object} The maximum value in the Array.
          */

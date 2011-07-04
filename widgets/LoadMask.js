@@ -49,7 +49,7 @@ Ext.LoadMask.prototype = {
     /**
      * @cfg {Ext.data.Store} store
      * Optional Store to which the mask is bound. The mask is displayed when a load request is issued, and
-     * hidden on either load sucess, or load fail.
+     * hidden on either load success, or load fail.
      */
     /**
      * @cfg {Boolean} removeMask

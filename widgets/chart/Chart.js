@@ -65,7 +65,7 @@
      * Contains extra styles that will be added or overwritten to the default chartStyle. Defaults to <tt>null</tt>.
      * For a detailed list of the options available, visit the YUI Charts site
      * at <a href="http://developer.yahoo.com/yui/charts/#basicstyles">http://developer.yahoo.com/yui/charts/#basicstyles</a><br/>
-     * Some of the options availabe:<br />
+     * Some of the options available:<br />
      * <ul style="padding:5px;padding-left:16px;list-style-type:inherit;">
      * <li><b>padding</b> - The space around the edge of the chart's contents. Padding does not increase the size of the chart.</li>
      * <li><b>animationEnabled</b> - A Boolean value that specifies whether marker animations are enabled or not. Enabled by default.</li>
@@ -79,7 +79,7 @@
      *      <li><b>underline</b> - boolean</li>
      *  </ul>
      * </li>
-     * <li><b>border</b> - An object defining the border style around the chart. The chart itself will decrease in dimensions to accomodate the border.<br/>
+     * <li><b>border</b> - An object defining the border style around the chart. The chart itself will decrease in dimensions to accommodate the border.<br/>
      *  <ul style="padding:5px;padding-left:26px;list-style-type:circle;">
      *      <li><b>color</b> - border color (hex code, ie: "#ff0000", "ff0000" or 0xff0000)</li>
      *      <li><b>size</b> - border size in pixels (numeric portion only, ie: 1)</li>

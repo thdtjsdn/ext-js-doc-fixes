@@ -75,7 +75,7 @@ restActions : {
         /**
          * Returns the actual CRUD action KEY "create", "read", "update" or "destroy" from the supplied action-name.  This method is used internally and shouldn't generally
          * need to be used directly.  The key/value pair of Ext.data.Api.actions will often be identical but this is not necessarily true.  A developer can override this naming
-         * convention if desired.  However, the framework internally calls methods based upon the KEY so a way of retreiving the the words "create", "read", "update" and "destroy" is
+         * convention if desired.  However, the framework internally calls methods based upon the KEY so a way of retrieving the the words "create", "read", "update" and "destroy" is
          * required.  This method will cache discovered KEYS into the private validActions hash.
          * @param {String} name The runtime name of the action.
          * @return {String||null} returns the action-key, or verb of the user-action or null if invalid.

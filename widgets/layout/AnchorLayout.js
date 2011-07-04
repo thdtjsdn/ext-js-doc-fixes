@@ -15,7 +15,7 @@
  * <p>AnchorLayout does not have any direct config options (other than inherited ones). By default,
  * AnchorLayout will calculate anchor measurements based on the size of the container itself. However, the
  * container using the AnchorLayout can supply an anchoring-specific config property of <b>anchorSize</b>.
- * If anchorSize is specifed, the layout will use it as a virtual container for the purposes of calculating
+ * If anchorSize is specified, the layout will use it as a virtual container for the purposes of calculating
  * anchor measurements based on it instead, allowing the container to be sized independently of the anchoring
  * logic if necessary.  For example:</p>
  * <pre><code>
@@ -44,7 +44,7 @@ var viewport = new Ext.Viewport({
 Ext.layout.AnchorLayout = Ext.extend(Ext.layout.ContainerLayout, {
     /**
      * @cfg {String} anchor
-     * <p>This configuation option is to be applied to <b>child <tt>items</tt></b> of a container managed by
+     * <p>This configuration option is to be applied to <b>child <tt>items</tt></b> of a container managed by
      * this layout (ie. configured with <tt>layout:'anchor'</tt>).</p><br/>
      *
      * <p>This value is what tells the layout how an item should be anchored to the container. <tt>items</tt>

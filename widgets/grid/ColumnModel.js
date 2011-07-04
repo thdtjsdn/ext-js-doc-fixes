@@ -10,7 +10,7 @@
  * <p>After the data has been read into the client side cache (<b>{@link Ext.data.Store Store}</b>),
  * the ColumnModel is used to configure how and what parts of that data will be displayed in the
  * vertical slices (columns) of the grid. The Ext.grid.ColumnModel Class is the default implementation
- * of a ColumnModel used by implentations of {@link Ext.grid.GridPanel GridPanel}.</p>
+ * of a ColumnModel used by implementations of {@link Ext.grid.GridPanel GridPanel}.</p>
  * <p>Data is mapped into the store's records and then indexed into the ColumnModel using the
  * <tt>{@link Ext.grid.Column#dataIndex dataIndex}</tt>:</p>
  * <pre><code>
@@ -133,7 +133,7 @@ Ext.grid.ColumnModel = Ext.extend(Ext.util.Observable, {
 	    this.addEvents(
 	        /**
 	         * @event widthchange
-	         * Fires when the width of a column is programmaticially changed using
+	         * Fires when the width of a column is programmatically changed using
 	         * <code>{@link #setColumnWidth}</code>.
 	         * Note internal resizing suppresses the event from firing. See also
 	         * {@link Ext.grid.GridPanel}.<code>{@link #columnresize}</code>.
@@ -277,7 +277,7 @@ Ext.grid.ColumnModel = Ext.extend(Ext.util.Observable, {
     /**
      * Moves a column from one position to another.
      * @param {Number} oldIndex The index of the column to move.
-     * @param {Number} newIndex The position at which to reinsert the coolumn.
+     * @param {Number} newIndex The position at which to reinsert the column.
      */
     moveColumn : function(oldIndex, newIndex) {
         var config = this.config,

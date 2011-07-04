@@ -366,7 +366,7 @@ var w = new Ext.Window({
      * <li><b>qtip</b> : String/Object<div class="sub-desc">A tip string, or
      * a config argument to {@link Ext.QuickTip#register}</div></li>
      * <li><b>hidden</b> : Boolean<div class="sub-desc">True to initially render hidden.</div></li>
-     * <li><b>on</b> : Object<div class="sub-desc">A listener config object specifiying
+     * <li><b>on</b> : Object<div class="sub-desc">A listener config object specifying
      * event listeners in the format of an argument to {@link #addListener}</div></li>
      * </ul></div>
      * <p>Note that, apart from the toggle tool which is provided when a panel is collapsible, these
@@ -534,7 +534,7 @@ new Ext.Panel({
     /**
      * @cfg {Boolean} disabled
      * Render this panel disabled (default is <code>false</code>). An important note when using the disabled
-     * config on panels is that IE will often fail to initialize the disabled mask element correectly if
+     * config on panels is that IE will often fail to initialize the disabled mask element correctly if
      * the panel's layout has not yet completed by the time the Panel is disabled during the render process.
      * If you experience this issue, you may need to instead use the {@link #afterlayout} event to initialize
      * the disabled state:

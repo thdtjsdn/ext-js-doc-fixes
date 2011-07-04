@@ -462,7 +462,7 @@ mc.add(otherEl);
 
     /**
      * Reorders each of the items based on a mapping from old index to new index. Internally this
-     * just translates into a sort. The 'sort' event is fired whenever reordering has occured.
+     * just translates into a sort. The 'sort' event is fired whenever reordering has occurred.
      * @param {Object} mapping Mapping from old item index to new item index
      */
     reorder: function(mapping) {

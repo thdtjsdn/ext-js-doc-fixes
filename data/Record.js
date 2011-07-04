@@ -354,7 +354,7 @@ rec.{@link #commit}(); // updates the view
     },
 
     /**
-     * Gets a hash of only the fields that have been modified since this Record was created or commited.
+     * Gets a hash of only the fields that have been modified since this Record was created or committed.
      * @return Object
      */
     getChanges : function(){
@@ -415,7 +415,7 @@ Ext.data.Record.id(rec); // automatically generate a unique sequential id
 
     /**
      * <p>Marks this <b>Record</b> as <code>{@link #dirty}</code>.  This method
-     * is used interally when adding <code>{@link #phantom}</code> records to a
+     * is used internally when adding <code>{@link #phantom}</code> records to a
      * {@link Ext.data.Store#writer writer enabled store}.</p>
      * <br><p>Marking a record <code>{@link #dirty}</code> causes the phantom to
      * be returned by {@link Ext.data.Store#getModifiedRecords} where it will
