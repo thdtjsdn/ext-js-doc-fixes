@@ -10,6 +10,7 @@
  * {@link Ext.grid.ColumnModel ColumnModel}.</p>
  * <p>While subclasses are provided to render data in different ways, this class renders a passed
  * data field unchanged and is usually used for textual columns.</p>
+ * @xtype gridcolumn
  */
 Ext.grid.Column = Ext.extend(Ext.util.Observable, {
     /**

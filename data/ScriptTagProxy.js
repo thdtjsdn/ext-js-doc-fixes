@@ -8,7 +8,7 @@
  * @class Ext.data.ScriptTagProxy
  * @extends Ext.data.DataProxy
  * An implementation of Ext.data.DataProxy that reads a data object from a URL which may be in a domain
- * other than the originating domain of the running page.<br>
+ * other than the originating domain of the running page.
  * <p>
  * <b>Note that if you are retrieving data from a page that is in a domain that is NOT the same as the originating domain
  * of the running page, you must use this class, rather than HttpProxy.</b><br>

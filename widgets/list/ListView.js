@@ -8,7 +8,7 @@
  * @class Ext.list.ListView
  * @extends Ext.DataView
  * <p>Ext.list.ListView is a fast and light-weight implementation of a
- * {@link Ext.grid.GridPanel Grid} like view with the following characteristics:</p>
+ * {@link Ext.grid.GridPanel Grid} like view. It has the following characteristics:</p>
  * <div class="mdetail-params"><ul>
  * <li>resizable columns</li>
  * <li>selectable</li>

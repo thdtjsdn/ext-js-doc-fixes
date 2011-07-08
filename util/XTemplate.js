@@ -7,7 +7,7 @@
 /**
  * @class Ext.XTemplate
  * @extends Ext.Template
- * <p>A template class that supports advanced functionality like:<div class="mdetail-params"><ul>
+ * <p>A template class that supports advanced functionality.<div class="mdetail-params"><ul>
  * <li>Autofilling arrays using templates and sub-templates</li>
  * <li>Conditional processing with basic comparison operators</li>
  * <li>Basic math function support</li>

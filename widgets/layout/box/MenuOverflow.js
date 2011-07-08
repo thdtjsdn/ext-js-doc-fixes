@@ -8,6 +8,7 @@
  * @class Ext.layout.boxOverflow.Menu
  * @extends Ext.layout.boxOverflow.None
  * Description
+ * @xtype boxoverflowmenu
  */
 Ext.layout.boxOverflow.Menu = Ext.extend(Ext.layout.boxOverflow.None, {
     /**

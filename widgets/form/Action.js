@@ -16,6 +16,7 @@
  * {@link Ext.form.BasicForm#load load} and {@link Ext.form.BasicForm#doAction doAction}),
  * and to the {@link Ext.form.BasicForm#actioncomplete actioncomplete} and
  * {@link Ext.form.BasicForm#actionfailed actionfailed} event handlers.</p>
+ * @xtype formaction
  */
 Ext.form.Action = function(form, options){
     this.form = form;

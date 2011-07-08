@@ -95,6 +95,11 @@ Ext.Action = Ext.extend(Object, {
      */
 
     constructor : function(config){
+        /**
+         * This Action's initial configuration specification. Read-only.
+         * @type Object
+         * @property initialConfig
+         */
         this.initialConfig = config;
         this.itemId = config.itemId = (config.itemId || config.id || Ext.id());
         this.items = [];

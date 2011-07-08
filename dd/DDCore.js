@@ -2702,7 +2702,7 @@ Ext.extend(Ext.dd.DD, Ext.dd.DragDrop, {
      * @method getTargetCoord
      * @param {int} iPageX the X coordinate of the click
      * @param {int} iPageY the Y coordinate of the click
-     * @return an object that contains the coordinates (Object.x and Object.y)
+     * @return {Object} an object that contains the coordinates (Object.x and Object.y)
      * @private
      */
     getTargetCoord: function(iPageX, iPageY) {

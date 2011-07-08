@@ -10,6 +10,7 @@
  * {@link Ext.list.ListView ListView}.</p>
  * <p>While subclasses are provided to render data in different ways, this class renders a passed
  * data field unchanged and is usually used for textual columns.</p>
+ * @xtype listcolumn
  */
 Ext.list.Column = Ext.extend(Object, {
     /**
