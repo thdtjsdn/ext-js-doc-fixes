@@ -149,7 +149,7 @@ Ext.ComponentMgr = function(){
          * Creates a new Plugin from the specified config object using the
          * config object's {@link Ext.component#ptype ptype} to determine the class to instantiate.
          * @param {Object} config A configuration object for the Plugin you wish to create.
-         * @param {Constructor} defaultType The constructor to provide the default Plugin type if
+         * @param {String} defaultType The <code>ptype</code> to use if
          * the config object does not contain a <code>ptype</code>. (Optional if the config contains a <code>ptype</code>).
          * @return {Ext.Component} The newly instantiated Plugin.
          */
