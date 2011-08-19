@@ -7,7 +7,8 @@
 /**
  * @class Ext.XTemplate
  * @extends Ext.Template
- * <p>A template class that supports advanced functionality.<div class="mdetail-params"><ul>
+ * A template class that supports advanced functionality.
+ * <div class="mdetail-params"><ul>
  * <li>Autofilling arrays using templates and sub-templates</li>
  * <li>Conditional processing with basic comparison operators</li>
  * <li>Basic math function support</li>
@@ -15,7 +16,7 @@
  * <li>Custom member functions</li>
  * <li>Many special tags and built-in operators that aren't defined as part of
  * the API, but are supported in the templates that can be created</li>
- * </ul></div></p>
+ * </ul></div>
  * <p>XTemplate provides the templating mechanism built into:<div class="mdetail-params"><ul>
  * <li>{@link Ext.DataView}</li>
  * <li>{@link Ext.ListView}</li>
