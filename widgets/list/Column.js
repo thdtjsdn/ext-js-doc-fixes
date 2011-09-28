@@ -10,7 +10,7 @@
  * {@link Ext.list.ListView ListView}.</p>
  * <p>While subclasses are provided to render data in different ways, this class renders a passed
  * data field unchanged and is usually used for textual columns.</p>
- * @xtype listcolumn
+ * @xtype lvcolumn
  */
 Ext.list.Column = Ext.extend(Object, {
     /**
@@ -81,6 +81,7 @@ Ext.reg('lvcolumn', Ext.list.Column);
  * @extends Ext.list.Column
  * <p>A Column definition class which renders a numeric data field according to a {@link #format} string.  See the
  * {@link Ext.list.Column#xtype xtype} config option of {@link Ext.list.Column} for more details.</p>
+ * @xtype lvnumbercolumn
  */
 Ext.list.NumberColumn = Ext.extend(Ext.list.Column, {
     /**
@@ -104,6 +105,7 @@ Ext.reg('lvnumbercolumn', Ext.list.NumberColumn);
  * <p>A Column definition class which renders a passed date according to the default locale, or a configured
  * {@link #format}. See the {@link Ext.list.Column#xtype xtype} config option of {@link Ext.list.Column}
  * for more details.</p>
+ * @xtype lvdatecolumn
  */
 Ext.list.DateColumn = Ext.extend(Ext.list.Column, {
     format: 'm/d/Y',
@@ -119,6 +121,7 @@ Ext.reg('lvdatecolumn', Ext.list.DateColumn);
  * @extends Ext.list.Column
  * <p>A Column definition class which renders boolean data fields.  See the {@link Ext.list.Column#xtype xtype}
  * config option of {@link Ext.list.Column} for more details.</p>
+ * @xtype lvbooleancolumn
  */
 Ext.list.BooleanColumn = Ext.extend(Ext.list.Column, {
     /**

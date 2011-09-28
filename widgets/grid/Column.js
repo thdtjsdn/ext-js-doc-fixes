@@ -371,6 +371,7 @@ var grid = new Ext.grid.GridPanel({
  * @extends Ext.grid.Column
  * <p>A Column definition class which renders boolean data fields.  See the {@link Ext.grid.Column#xtype xtype}
  * config option of {@link Ext.grid.Column} for more details.</p>
+ * @xtype booleancolumn
  */
 Ext.grid.BooleanColumn = Ext.extend(Ext.grid.Column, {
     /**
@@ -410,6 +411,7 @@ Ext.grid.BooleanColumn = Ext.extend(Ext.grid.Column, {
  * @extends Ext.grid.Column
  * <p>A Column definition class which renders a numeric data field according to a {@link #format} string.  See the
  * {@link Ext.grid.Column#xtype xtype} config option of {@link Ext.grid.Column} for more details.</p>
+ * @xtype numbercolumn
  */
 Ext.grid.NumberColumn = Ext.extend(Ext.grid.Column, {
     /**
@@ -430,6 +432,7 @@ Ext.grid.NumberColumn = Ext.extend(Ext.grid.Column, {
  * <p>A Column definition class which renders a passed date according to the default locale, or a configured
  * {@link #format}. See the {@link Ext.grid.Column#xtype xtype} config option of {@link Ext.grid.Column}
  * for more details.</p>
+ * @xtype datecolumn
  */
 Ext.grid.DateColumn = Ext.extend(Ext.grid.Column, {
     /**
@@ -451,6 +454,7 @@ Ext.grid.DateColumn = Ext.extend(Ext.grid.Column, {
  * {@link Ext.data.Record#data data} using a {@link #tpl configured} {@link Ext.XTemplate XTemplate}.
  * See the {@link Ext.grid.Column#xtype xtype} config option of {@link Ext.grid.Column} for more
  * details.</p>
+ * @xtype templatecolumn
  */
 Ext.grid.TemplateColumn = Ext.extend(Ext.grid.Column, {
     /**
@@ -512,6 +516,7 @@ new Ext.grid.GridPanel({
 </pre></code>
  * <p>The action column can be at any index in the columns array, and a grid can have any number of
  * action columns. </p>
+ * @xtype actioncolumn
  */
 Ext.grid.ActionColumn = Ext.extend(Ext.grid.Column, {
     /**
